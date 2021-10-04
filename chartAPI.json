@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "TITLE HERE",
-      "subtitle":"Sub-title here",
+      "text": "Lateral flow tests performed over time",
+      "subtitle":"Cumulative LFD tests for the largest UK cities",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -11,7 +11,7 @@
     },
     
      "data": {
-      "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesByPublishDateRollingRate&format=csv",
+      "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=cumLFDTests&format=csv",
       "format": {"type": "csv"}
     },
   
@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Bristol, City of", "Bolton", "Glasgow City"]}
+          "oneOf": ["Hackney and City of London", "Birmingham", "Leeds"]}
           }
   
   
@@ -41,7 +41,7 @@
       },
   
       "y": {
-        "field": "newCasesByPublishDateRollingRate",
+        "field": "cumLFDTests",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
@@ -51,7 +51,7 @@
         "field": "areaName",
         "type": "nominal",
         "scale": {"scheme": "set1"},
-        "title": "LEGEND TITLE",
+        "title": "",
         "legend": {
           "orient": "top-left", 
           "fillColor": "#FcFdFd"}
