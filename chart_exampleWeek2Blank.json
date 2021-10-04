@@ -11,7 +11,7 @@
     },
     
      "data": {
-      "url": "PASTE YOUR API HERE",
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/mtcoviddata.csv",
       "format": {"type": "csv"}
     },
   
