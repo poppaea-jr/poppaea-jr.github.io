@@ -48,8 +48,8 @@
       },
   
       "color": {
-        "field": "Westminster",
-        "type": "nominal",
+        "field": "areaName",
+        "type": "Westminster",
         "scale": {"scheme": "set1"},
         "title": "LEGEND TITLE",
         "legend": {
