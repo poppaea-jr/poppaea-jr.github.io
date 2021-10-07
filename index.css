@@ -5,14 +5,15 @@
 /* This is my first proper css file */
 
 body{
-    background-color: rgb(233, 233, 233)
+    background-color: DarkSlateGrey;
+    min-height: 100vh;
     max-width: 500px;
     margin: auto;
 }
 
 h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+    color:Gainsboro;
+    font-family:Verdana, sans-serif;
 }
 
 .chart{
