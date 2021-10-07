@@ -39,7 +39,7 @@
     "color": {
       "field": "areaName",
       "type": "nominal",
-      "scale": {"range": ["red","yellow","green"]},
+      "scale": {"range": ["DarkSlateGrey","DarkCyan","DimGrey"]},
       "title": "",
       "legend": {"orient": "top-right", "fillColor": "#FcFdFd"}
     }
