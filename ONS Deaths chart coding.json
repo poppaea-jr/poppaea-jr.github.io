@@ -1,48 +1,60 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "COVID Deaths",
-    "subtitle": "Newly recorded covid deaths by the ONS over periods Apr 2020 - Sep 2021",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "black"
-  },
-  "data": {
-    "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/NewONSDeathsByRegDate.csv",
-    "format": {"type": "csv"}
-  },
-  "transform": [
-    {
-      "filter": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "New Covid Deaths by Registration Date",
+      "subtitle":"ONS data for the largest UK cities outside London",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/NewONSDeathsByRegDate.csv",
+      "format": {"type": "csv"}
+    },
+  
+     "transform":[
+        
+        {"filter": {
+          "field": "areaName", 
+          "oneOf": ["Manchester", "Leeds", "Birmingham"]}
+          }
+  
+  
+      ],
+    
+    
+    "height": 300,
+    "width": 310,
+     
+    "mark": {"type": "line", "point": false},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "field": "newOnsDeathsByRegistrationDate",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      },
+  
+      "color": {
         "field": "areaName",
-        "oneOf": ["Hackney and City of London", "Birmingham", "Leeds"]
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": "",
+        "legend": {
+          "orient": "top-right", 
+          "fillColor": "#FcFdFd"}
       }
-    }
-  ],
-  "height": 300,
-  "width": 310,
-  "mark": {"type": "line", "point": false},
-  "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": null,
-      "axis": {"grid": false}
-    },
-    "y": {
-      "field": "newOnsDeathsByRegistrationDate",
-      "type": "quantitative",
-      "title": null,
-      "axis": {"grid": false}
-    },
-    "color": {
-      "field": "areaname",
-      "type": "nominal",
-      "scale": {"scheme": "set1"},
-      "title": "",
-      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
-    }
-  },
-  "config": {}
-}
+  }
+  }
