@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+<style>
+       
+body {background-color: DarkSlateGrey;
+      min-height: 100vh;}
+h1   {color: Gainsboro;
+      text-align: center;
+      font-family:Verdana, sans-serif;
+}
+      
+  p {color: Gainsboro;
+     text-align: center;
+      font-family: Verdana, sans-serif;
+  }
+
+</style>  
+<!-- source: https://www.w3schools.com/ >
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+<body>
+  
+<p> test </p>
+
+</body>
+</html>
