@@ -5,7 +5,9 @@
 /* This is my first proper css file */
 
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233)
+    max-width: 500px;
+    margin: auto;
 }
 
 h1, h3, p{
