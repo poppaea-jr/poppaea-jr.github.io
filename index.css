@@ -1,27 +1,33 @@
-
-
-
-
-/* This is my first proper css file */
-
 body{
-    background-color: DarkSlateGrey;
-    min-height: 100vh;
-    max-width: 500px;
+
+    background-color: DarkSlateGrey ;
+    max-width: 420px;
     margin: auto;
 }
 
-h1, h3, p{
-    color:Gainsboro;
-    font-family:Verdana, sans-serif;
+h1{
+
+    color: White;
+    font-family: 'Verdana', sans-serif ;
 }
 
+h3{font-family: 'Verdana', sans-serif;
+    color: White;
+          }
+
+p{font-family: 'Verdana', sans-serif;
+color: White;
+      }
+
+
+
 .chart{
-    background-color: white;
-    width:330px;
+    width: 400px;
     border-width: 10px;
+    background-color: White;
     border-style: solid;
     border-radius: 5px;
-    border-color: white;
+    border-color: White;
+    margin: auto;
 }
 
