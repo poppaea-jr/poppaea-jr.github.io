@@ -1,7 +1,7 @@
 body{
 
     background-color: DarkSlateGrey ;
-    max-width: 420px;
+    max-width: 300px;
     margin: auto;
 }
 
@@ -22,7 +22,7 @@ color: White;
 
 
 .chart{
-    width: 400px;
+    width: 300px;
     border-width: 10px;
     background-color: White;
     border-style: solid;
