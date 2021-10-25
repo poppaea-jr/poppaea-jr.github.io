@@ -19,15 +19,16 @@ p{font-family: 'Verdana', sans-serif;
 color: White;
       }
 
-<p> test </p>
 
 .chart{
     width: 400px;
     border-width: 10px;
-    background-color: White;
+    background-color: white;
     border-style: solid;
     border-radius: 5px;
-    border-color: White;
+    border-color: white;
     margin: auto;
+
+
 }
 
