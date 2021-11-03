@@ -15,7 +15,6 @@
   },
   "height": 300,
   "width": 310,
-  "xxconfig": {"background": "#FcFdFd"},
   "mark": {"type": "line", "point": false},
   "selection": {
     "region": {"type": "multi", "fields": ["areaName"], "bind": "legend"}
