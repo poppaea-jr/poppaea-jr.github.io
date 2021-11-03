@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://github.com/poppaea-jr/poppaea-jr.github.io/main/project/stackedbar.csv"
+      "url": "hhttps://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/chartbar1.json"
     },
     "mark": "bar",
     "width": 250,
