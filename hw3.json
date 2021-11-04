@@ -1,44 +1,42 @@
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    
-    
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
   "title": {
-      "text": "Palm oil land use",
-      "subtitle":"Million hectares. Source: Our World in Data",
+      "text": "Green Party representation – European Parliament ",
+      "subtitle":"% of seats won by election. Source: European Parliament",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
-      "color": "black"
+      "color": "black"},
+  
+    "data":  {
+        	    "values": [
+    {"Time": "1984", "Value": 2.5}, {"Time": "1989", "Value": 5.79}, {"Time": "1994", "Value": 4.06},
+    {"Time": "1999", "Value": 7.67}, {"Time": "2004", "Value": 5.74}, {"Time": "2009", "Value": 7.47},
+    {"Time": "2014", "Value": 6.66}, {"Time": "2019", "Value": 9.85}
+  ]
     },
   
-    "data": {
-      "url": "Green_CarbonPerCapita.csv"
-    },
-    "height": 300,
-    "width": 300,
-    "mark": "line",
-    "encoding": {
-      "x": {"field": "Time", "type": "temporal", "title": "", "axis": {"grid": false}},
+  "height": 300,
+  "width": 260,
+
+  "mark": {
+    "type": "bar",
+    "color": "#86d0bb"},
+
+"encoding": {
+     "x": {
+       "field": "Time",
+       "type": "nominal",
+       "axis": {
+         "title": null,
+         "grid": false,
+         "ticks": false,
+         "labelAngle": 45}},
+
       "y": {
         "field": "Value",
         "type": "quantitative",
         "title": "",
-        "axis": {"grid": false},
-        "sort": [],
-        "scale": {"domain": [-0.25, 26]}
-      },
-      "color": {
-        "field": "Region",
-        "title": null,
-        "legend": {"orient": "top-left"},
-        "type": "nominal",
-        "sort": [],
-        "scale": {"scheme": "yellowgreenblue"}
-      },
-      "tooltip": [
-        {"field": "Time", "type": "temporal", "timeUnit": "year", "title": "Year"},
-        {"field": "Value", "type": "quantitative", "title": "CO2 per capita (t)"},
-        {"field": "Region", "title": "Country"}
-      ]
-    }
-  }
+        "axis": {"grid": false}}
+}
+}
