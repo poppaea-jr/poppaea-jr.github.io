@@ -3,7 +3,7 @@
     "description": "WHI",
     "title": {
   
-      "text": "The Top 10 Happies Nations*",
+      "text": "The Top 25 Happies Nations*",
   
       "subtitle": "*According to the World Happiness Index 2020",
   
@@ -16,7 +16,7 @@
       "color": "black"
    },
   
-    "data": {"url": "https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/WHRdata.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/WHRdataT25.csv"},
     "mark":{
   
    
