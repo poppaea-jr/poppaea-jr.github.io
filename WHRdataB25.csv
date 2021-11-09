@@ -1,26 +1,26 @@
-Overall rank,Country or region,Score|Happiness score,GDP per capita|Explained by: GDP ,Social support|Explained by: Social support,Healthy life expectancy|Explained by: Healthy life expectancy,Freedom to make life choices|Explained by: Freedom to make life choices,Generosity|Explained by: Generosity,Perceptions of corruption|Explained by: Perceptions of corruption
-129,Mauritania,4.375,0.54,1.113,0.425,0.186,0.129,0.122
-130,Sri Lanka,4.327,0.898,1.195,0.792,0.529,0.253,0.049
-131,Congo (Kinshasa),4.311,0.062,0.833,0.277,0.365,0.254,0.081
-132,Swaziland,4.308,0.828,1.065,0.216,0.3,0.067,0.147
-133,Myanmar,4.308,0.678,1.098,0.495,0.597,0.57,0.188
-134,Comoros,4.289,0.416,0.723,0.437,0.181,0.259,0.1
-135,Togo,4.187,0.268,0.548,0.343,0.304,0.201,0.115
-136,Ethiopia,4.186,0.315,1.001,0.484,0.413,0.228,0.117
-137,Madagascar,4.166,0.245,0.824,0.501,0.193,0.191,0.076
-138,Egypt,4.151,0.875,0.983,0.597,0.374,0.069,0.095
-139,Sierra Leone,3.926,0.241,0.748,0.204,0.382,0.258,0.048
-140,Burundi,3.775,0,0.404,0.295,0.275,0.187,0.212
-141,Zambia,3.759,0.537,0.896,0.364,0.491,0.251,0.087
-142,Haiti,3.721,0.285,0.647,0.374,0.169,0.464,0.162
-143,Lesotho,3.653,0.455,1.089,0.101,0.409,0.103,0.05
-144,India,3.573,0.731,0.644,0.541,0.581,0.237,0.106
-145,Malawi,3.538,0.177,0.53,0.446,0.487,0.213,0.132
-146,Yemen,3.527,0.393,1.177,0.415,0.244,0.095,0.087
-147,Botswana,3.479,0.998,1.086,0.494,0.509,0.033,0.102
-148,Tanzania,3.476,0.457,0.873,0.443,0.509,0.272,0.204
-149,Central African Republic,3.476,0.041,0,0,0.293,0.254,0.028
-150,Rwanda,3.312,0.343,0.523,0.572,0.604,0.236,0.486
-151,Zimbabwe,3.299,0.426,1.048,0.375,0.377,0.151,0.081
-152,South Sudan,2.817,0.289,0.553,0.209,0.066,0.21,0.111
-153,Afghanistan,2.567,0.301,0.356,0.266,0,0.135,0.001
+Country or region,Score|Happiness score
+Mauritania,4.375
+Sri Lanka,4.327
+Congo (Kinshasa),4.311
+Swaziland,4.308
+Myanmar,4.308
+Comoros,4.289
+Togo,4.187
+Ethiopia,4.186
+Madagascar,4.166
+Egypt,4.151
+Sierra Leone,3.926
+Burundi,3.775
+Zambia,3.759
+Haiti,3.721
+Lesotho,3.653
+India,3.573
+Malawi,3.538
+Yemen,3.527
+Botswana,3.479
+Tanzania,3.476
+Central African Republic,3.476
+Rwanda,3.312
+Zimbabwe,3.299
+South Sudan,2.817
+Afghanistan,2.567
