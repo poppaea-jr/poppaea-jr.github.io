@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+    "description": "UK Education Index",
+  
+     "title": {
+      "text": "UK Education Index",
+      "subtitle":"From the UNDP Human Development Report",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/GBR.csv"},
+    "height": 300,
+    "width": 345,
+    "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "monotone",
+      "color": "blueviolet"
+    },
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelSeparation": 20,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}
+      }
+    }
+  }
