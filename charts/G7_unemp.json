@@ -1,0 +1,78 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+  "title": {
+      "text": "Unemployment in G7 Countries",
+      "subtitle":"Yearly values as % of population. Source: OECD",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "description": "G7 Unemployment",
+    "data": {
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/G7_unemp.csv",
+      "format": {"type": "csv"}
+    },
+  
+    "height": 300,
+    
+    "width": 300,
+    
+    "mark": {"type": "line", "width":10},
+    
+    "selection": {
+      "Region": {
+        "type": "single",
+        "fields": ["LOCATION"],
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "CAN",
+            "FRA",
+            "DEU",
+            "ITA",
+            "JPN",
+            "GBR",
+            "USA"
+          ],
+          "name": "Pick a Country: "
+        }
+      }
+    },
+    "transform": [
+      
+      {"filter": {"selection": "Region"}},
+      {
+        "filter": {
+          "field": "TIME",
+          "range": [
+            {"year": 1994},
+            {"year": 2019}
+          ]
+        }
+      }
+    ],
+  
+    "encoding": {
+      "x": {
+        "field": "TIME", 
+        "type": "temporal", 
+        "title": null},
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": null
+      },
+      
+        
+      "color": {
+        "field": "LOCATION",
+        "type": "nominal",
+        "legend": null,
+        "scale": {"scheme": "inferno"}
+      }
+    }
+  }
