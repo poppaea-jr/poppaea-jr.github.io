@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+    "description": "Booster Vaccinations and Hospitalizations",
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/admissions_boosters2.csv",
+      "format": {"type": "csv"}
+    },
+  
+    "title": {
+      "text": "Boosters vs Hospitalizations",
+      "subtitle":"For the London area by date. Source: gov.uk.",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "height": 300,
+    "width": 270,
+  
+    "mark": {"type": "circle", "size":75},
+    
+     "encoding": {
+      "x": {"field": "newPeopleVaccinatedThirdInjectionByVaccinationDate", "type": "quantitative", "title": "Boosters"},
+    
+      "y": {
+        "field": "newAdmissions",
+        "type": "quantitative",
+        "title": "Hospitalizations"
+      },
+  
+      "color":{
+        "timeUnit":"month",
+        "field":"date",
+        "type": "ordinal",
+        "title":null,
+        "scale": {"scheme": "turbo"}},
+  
+      "tooltip": [
+        {"field": "date", "type": "temporal", "title": "Date"},
+        {
+          "field": "newPeopleVaccinatedThirdInjectionByVaccinationDate",
+          "type": "quantitative",
+          "title": "Boosters",
+          "format": ",.0f"
+        },
+        {
+          "field": "newAdmissions",
+          "type": "quantitative",
+          "title": "Hospitalizations",
+          "format": ",.0f"
+        }
+      ]
+    }
+  }
