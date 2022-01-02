@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://apis.datos.gob.ar/series/api/series?ids=Automotriz_expos_ItCfsr&header=titles&collapse=year&collapse_aggregation=end_of_period&format=csv",
+       "format": {
+           "type":"csv",
+           "property": "years"}},
+
+
+    "title": {
+        "text": "Vehicles exported from Argentina",
+        "subtitle": "Annual end of period values. Source: Datos Argentina",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"seagreen",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+
+    "encoding": {
+      "x": {
+          "field": "indice_tiempo",
+          "type": "temporal",
+          "title":null},
+      "y": {
+          "field": "valor",
+          "type": "quantitative",
+          "title":null}
+    }
+}
