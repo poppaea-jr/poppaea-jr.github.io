@@ -1,59 +1,59 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Source: OECD (2022), GDP per hour worked (indicator). doi: 10.1787/1439e590-en (Accessed on 04 January 2022)",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Source: OECD (2022), GDP per hour worked (indicator). doi: 10.1787/1439e590-en (Accessed on 04 January 2022)",
+    "layer": [{
+  "data": {"url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/productivity07.csv"},
       "layer": [{
-    "data": {"url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/productivity07.csv"},
-        "layer": [{
-          "mark": "line",
-          "encoding": {
-            "x": {"field": "TIME", "type": "temporal", "axis": {"labelAngle": 0}},
-            "y": {"field": "index", "type": "quantitative"}
-          }
-        }, {
-          "mark": "line",
-          "transform": [
-            {"filter": "datum.index >= 100"},
-            {"calculate": "100", "as": "baseline"}
-          ],
-          "encoding": {
-            "x": {"field": "TIME", "type": "temporal"},
-            "y": {"field": "baseline", "type": "quantitative", "title": ""},
-            "x2": {"field": "TIME"},
-            "color": {"value": "#e45755"}
-          }
-        }
-      ]}, 
-
-      {
-        "data": {
-           "values": [{}]
-        },
+        "mark": "line",
         "encoding": {
-          "x": {"datum": 1}
-        },
-        "layer": [{
-          "mark": "rule"
-        }, {
-          "mark": {
-            "type": "text",
-            "align": "right",
-            "baseline": "top",
-            "dx": -2,
-            "dy": -2,
-            "y": "height",
-            "text": "2007"
-          }
-        }]
+          "x": {"field": "TIME", "type": "quantitative", "axis": {"labelAngle": 0}},
+          "y": {"field": "index", "type": "quantitative"}
+        }
+      }, {
+        "mark": "line",
+        "transform": [
+          {"filter": "datum.index >= 100"},
+          {"calculate": "100", "as": "baseline"}
+        ],
+        "encoding": {
+          "x": {"field": "TIME", "type": "quantitative", "title": ""},
+          "y": {"field": "baseline", "type": "quantitative", "title": ""},
+          "x2": {"field": "TIME", "type": "quantitative", "title": ""},
+          "color": {"value": "#e45755"}
+        }
       }
-    ],
-    "title": {
-        "text": "UK Productivity",
-        "subtitle": "Indexed with 2007 as base year. Source: OECD",
-        "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
-        "anchor": "start",
-        "color": "black"},
+    ]}, 
 
-    "width":300,
-    "height":300
-  }
+    {
+      "data": {
+         "values": [{}]
+      },
+      "encoding": {
+        "x": {"datum": 2007}
+      },
+      "layer": [{
+        "mark": "rule"
+      }, {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "top",
+          "dx": -2,
+          "dy": -2,
+          "y": "height",
+          "text": "2007"
+        }
+      }]
+    }
+  ],
+  "title": {
+      "text": "UK Productivity",
+      "subtitle": "Indexed with 2007 as base year. Source: OECD",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+
+  "width":300,
+  "height":300
+}
