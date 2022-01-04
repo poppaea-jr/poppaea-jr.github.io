@@ -2,11 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Source: OECD (2022), GDP per hour worked (indicator). doi: 10.1787/1439e590-en (Accessed on 04 January 2022)",
     "layer": [{
-  "data": {"url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/productivity07.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/prod_ind_dt.csv"},
       "layer": [{
         "mark": "line",
         "encoding": {
-          "x": {"field": "TIME", "type": "quantitative", "axis": {"labelAngle": 0}},
+          "x": {"field": "TIME", "type": "temporal", "axis": {"labelAngle": 0}},
           "y": {"field": "index", "type": "quantitative"}
         }
       }, {
@@ -16,9 +16,9 @@
           {"calculate": "100", "as": "baseline"}
         ],
         "encoding": {
-          "x": {"field": "TIME", "type": "quantitative", "title": ""},
+          "x": {"field": "TIME", "type": "temporal", "title": ""},
           "y": {"field": "baseline", "type": "quantitative", "title": ""},
-          "x2": {"field": "TIME", "type": "quantitative", "title": ""},
+          "x2": {"field": "TIME", "type": "temporal", "title": ""},
           "color": {"value": "#e45755"}
         }
       }
@@ -29,7 +29,7 @@
          "values": [{}]
       },
       "encoding": {
-        "x": {"datum": 2007}
+        "x": {"datum": "1167609600000"}
       },
       "layer": [{
         "mark": "rule"
@@ -41,7 +41,7 @@
           "dx": -2,
           "dy": -2,
           "y": "height",
-          "text": "2007"
+          "text": ""
         }
       }]
     }
