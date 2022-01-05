@@ -21,7 +21,7 @@
 
     "mark":{
         "type": "line",
-        "color":"seagreen",
+        "color":"DarkSlateGrey",
         "strokeWidth":2,
         "opacity":1},
  
