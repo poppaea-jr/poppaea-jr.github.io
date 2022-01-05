@@ -19,7 +19,7 @@
           "x": {"field": "TIME", "type": "temporal", "title": ""},
           "y": {"field": "baseline", "type": "quantitative", "title": ""},
           "x2": {"field": "TIME", "type": "temporal", "title": ""},
-          "color": {"value": "#e45755"}
+          "color": {"value": "#DarkSlateGrey"}
         }
       }
     ]}, 

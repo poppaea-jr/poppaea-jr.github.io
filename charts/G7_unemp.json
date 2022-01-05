@@ -18,7 +18,7 @@
   
     "height": 300,
     
-    "width": 300,
+    "width": 280,
     
     "mark": {"type": "line", "width":10},
     
@@ -71,7 +71,7 @@
       "color": {
         "field": "LOCATION",
         "type": "nominal",
-        "legend": null,
+        "legend": {"orient": "right"},
         "scale": {"scheme": "inferno"}
       }
     }
