@@ -1,0 +1,341 @@
+Post,DateTime,polarity
+"I'm trying to teach myself options trading (mostly selling) but I find the terminology very difficult. I've spent months here trying to discern the gain/loss porn posted here and it still takes me awhile to figure it out. Those of you that do it successfully, how did you get started? None of my friends are interested in learning with me and I don't know where to look for a mentor. My portfolio (225k CAD) is doing okay but I can't help but think that with the same amount of capital I can potentially earn much more trading options than holding shares.",2022-01-04 16:43:00,0.19444444444444445
+"As this is asked frequently in different subs I thought I put it here for further reference.
+
+First of all: **do not invest on margin** if you don't understand exactly what you are doing. It is very dangerous and you have to control the risk.
+
+Now to control the risk you cannot rely on your broker. Some brokers will issue a margin call, others will just start to liquidate your positions when your equity goes down. Don't let this happen, control the risk yourself and act yourself before the broker does.
+
+First you define how much you want to invest on margin. Say you want to take a loan of 20% then your  are at 120%. Then define a maximum level before you start liquidating your positions yourself. This multiple must be lower than the maximum your broker would give you. Say you declare this to be 300% (which is quiet high, but some brokers even give you 800% or more with portfolio margin).
+
+The formula which you can use in a spreadsheet should tell you to which level the value of your portfolio may tank before you have to take action. This is the formula:
+
+D=Debt
+
+Mmax=maximum margin before you have to act
+
+Vmin=minimum value your positions may fall to
+
+V=actual value
+
+ST=Stress tolerance. That much your positions may lose before you have to act.
+
+Vmin=D\*Mmax/(Mmax-100%)
+
+ST=(V-Vmin)/V
+
+Sorry, I'm no mathematician. I use those formulas in spreadsheets to control my risk in strategies with margin. The most important number is Vmin. Whenever the value of your stocks comes near that or even under that number you have to take action, say close positions.
+
+Example: you have 100'000 and want to invest 120% on margin. You want to get out at 300% margin.
+
+Vmin=20000\*300/(300-100) = 30000
+
+ST=(120000-30000)/120000 = 75%
+
+You have a stress tolerance of 75%. Bare in mind that in this example you lose 90% of your capital before you have to take action! Without margin you can lose close to 100% without having to take action and therefore have a stress tolerance of almost 100% (the broker probably would close your account if all your holdings go to zero and there is no cash left...).",2022-01-04 16:42:29,0.08041062801932368
+"Hello friends, I've been investing for greater part of covid, and have experienced great success during the bull run. But, am quickly realizing that consistent performance by picking individual stocks is extremely hard and unpredictable. For this reason, I'll be mostly sticking with ETFs because having ""late"" retirement is better than ""no"" retirement. Interested to hear how other's outlook/opinion have changed in the last few weeks.",2022-01-04 16:39:17,0.19687500000000002
+"Hi all,   
+
+
+Young beginner investor here. I'm currently sitting on 50k in a TSFA parked in Wealth Simple's Robo investor at 9 risk (heavy saver, don't really do much and not making tons of money).   
+
+
+I'm 27 years old and I'm nervous about the housing economy here in Canada. I'm curious if my current approach to investing could be sunk if there was to be a large housing crash or general economic crash (looking at you REPO rates posted on Reddit that I don't understand but look daunting). Maybe there's some other ideas to consider, otherwise I'll keep DCAing itno the portfolio wealthsimple built.",2022-01-04 16:30:36,0.03660714285714286
+"This is a Ubisoft top holder under ticker $WSFL (Woodstock Holdings)
+
+TLDR
+Ive been tracking it for months. There is no info as to why it moves and it goes for days without any change and the BAM!!! either up or down.
+
+Ive managed to acquire a few shares just in case and there has been a major increase in volume in recent months.
+
+Im just trying to wrap my hear around these people, cuz they wont even publish reports anymore and there is literally no news and no discussion on them at all.
+
+Any thoughts would be appreciated.",2022-01-04 16:14:57,0.14725115740740738
+"We've all gone through it before with investing where the market (or a stock) seems to wait on you before reversing. I've been watching NVDA and CRWD for a long time and decided to buy into CRWD last month (what terrible timing). There are so many growth stocks that are getting completely obliterated while the market makes new highs. PYPL and CRWD are my main ""dip"" buys but CRWD has really been a let down but I'm holding for now.",2022-01-04 16:11:51,-0.01139169472502807
+"I’ve been holding these two for a little while now and in the past few months they’ve been completely disappointing and considering selling and shifting into other positions. The thing is, I do believe that they are good companies, I just don’t know if they’re great stocks right now. Is there any upside for these in 2022 that makes them worth holding?",2022-01-04 16:10:03,0.08035714285714286
+"Anyone looking at converting their Pre-Tax IRA to Roth during the decline?  How far would you wait for it to fall before making this move?
+
+I expect the market to be up 10% this year but with a lot of volatility.",2022-01-04 16:04:37,0.1
+This is a problematic designer seed company that hasn't got a CEO at the helm. Very unusual volume flooded into the market today after almost breaking a dollar last month. Something is up. Keeping an eye on this one.,2022-01-04 15:56:48,0.13
+"Got 3.5 grand to spend and can't decide between AMZN or AAPL.
+
+AMZN has had a pretty flat 2021 despite spending loads on infrastructure and is due for a nice run up.  
+AAPL is breaking out into new tech and industries like glasses and EVs.
+
+Feel like both could make a big move in 2022.",2022-01-04 15:56:25,0.19090909090909092
+"American manufacturers in December matched their slowest pace of growth in 11 months as they coped with persistent labor and material shortages and braced for a fresh onslaught from the omicron strain of the coronavirus. 
+
+A closely followed index of U.S.-based manufacturers dropped to 58.7% in the final month of 2021 compared to 61.1% in November, the Institute for Supply Management said Tuesday. Any number above 50% signals expansion and readings above 60% are considered exceptional.
+
+Economists polled by The Wall Street Journal had forecast the index to slip to 60%.
+
+The ISM results are drawn from a survey of senior business executives. The index tends to give a good snapshot of the health of the U.S. economy. 
+
+**Big picture:** Manufacturers have plenty of demand for new cars, electronics, furniture and the like, but they are likely to remain under strain until all the shortages ease up.
+
+Omicron doesn’t help matters. The very contagious strain is likely to make it harder for manufacturers to keep production lines going at full tilt due to employees missing work after catching the virus. Yet they have been less affected by the coronavirus than businesses that deal with customers face to face.
+
+[https://www.marketwatch.com/story/u-s-manufacturers-grow-in-december-at-slowest-pace-in-11-months-as-omicron-strikes-11641308760?mod=home-page](https://www.marketwatch.com/story/u-s-manufacturers-grow-in-december-at-slowest-pace-in-11-months-as-omicron-strikes-11641308760?mod=home-page)",2022-01-04 15:52:53,0.13118686868686869
+"My portfolio is heavy growth stocks. It isn't stuff like weed stocks and SPACs. It is stuff like ETSY, SHOP, SQ, PYPL, CRWD, MRNA, SE, and NET.
+
+Quite a few of those stocks had such positive sentiment. Now it is disappeared and people are saying stuff like they will buy those stocks at prices that are 30-50% from where they are right now. Should I just dump it all into SPY/VOO/VTI and mega cap stocks like GOOG, FB, AAPL. Which dont have the negative sentiment around them?
+
+The only bright side is my boring stocks seem to be doing well which are bank stocks, funeral stocks, home builders, and public equity firms which dont get mentioned on reddit much. It seems the growth stocks that get heavily mentioned on reddit that seem to be down the most and seem to have bigger drawdowns.",2022-01-04 15:41:43,-0.00891053391053391
+"I’ve been following Ford for roughly 4 years now and it usually sat around $9-$12 and never below or above (with the exception of 2020 correction, it hit below $4) and now it’s up nearly 200% since 2020 and started issuing a dividend again. What’s driving the price so high?",2022-01-04 15:38:07,-0.014999999999999994
+"I bought it when it was 71, sold few at 250. It is now at \~155. Why did it fall down so low in a relatively short period of time (from Oct 21st ish)? Is it because of Afterpay acquisition or it's bitcoin holdings or H&R block suing block due to naming collision or/and anything else?
+
+I am for very long term, but falling down from 250 -> 155, I would like to know if it is going to plummet further since it is an overvalued stock (PE = 159)",2022-01-04 15:36:17,-0.07790123456790124
+"Love it or hate it (I’m personally not a Republican myself), the democrats look like they will lose big in the midterms.
+
+Everybody saw the weed stock bubble and the EV bubble recently because of the expectations which came with the 2020 election results.
+
+Which stocks would be good to grab early and hold thru a midterm election where Republicans will win? 
+
+Oil/gas? Health insurance? Raytheon?",2022-01-04 15:26:01,0.16249999999999998
+"I am currently building a database in excel to create an ARIMA model in RStudio to make forecasts for stock prices and the beta values of certain variables (to know what to look out for) and I consider that for many stocks inflation is an important factor, however, stock prices and all other variables I have chosen are published daily but the CPI is published monthly and the most recent data is from November 2021 (this screws up my whole model). I really don't want to ignore inflation completely since I want my model to have the highest R-Squared possible. I did a little research on daily indicators that mirror inflation and the closest I could find was the IQ Real Return Index (an etf) but the stated purpose of the index is to provide a real return above the inflation rate so I guess that its not the optimal variable to use here. So... does anyone know what I could use instead to incorporate inflation to the model that is reported daily?
+
+&#x200B;
+
+btw, before anyone tries to remind me about the high risk that relying on these sort of models and trading individual stocks in general, I'd like to add that only 20% of my portfolio is invested in individual stocks (only for this 20% is that I intend to use the ARIMA model), the other 80% of my portfolio is invested in ETFs which I just buy and hold for quite a while.",2022-01-04 15:19:36,0.08410714285714287
+"Options. Calls puts etc. Can someone just put it in the simplest of terms so anyone can understand. 
+
+I don’t trade options and don’t invest money I don’t have. Just haven’t sat down to really learn them yet",2022-01-04 15:08:20,0.022222222222222213
+"Seems to be hanging around 20 percent. 
+
+And at around the current market cap it doesn't look like a bad price. Currently my employer is making the switch to gitlab. Not sure how profitable this space can be. 
+
+Any other insight is highly appreciated.",2022-01-04 15:05:29,-0.1458333333333333
+"Since the rate hikes were announced starting this year I have been expecting financials to perform well. So far I have been seeing outsized returns from my Investors Bank (regional bank based in NJ) position and solid momentum from JPM and MS. As people shift to value from growth and factor in the value of rate hikes to lending institutions, I am expecting a lot more upward momentum from bank positions.
+
+Is anyone else leaning into financials for the next couple years and what are your top picks?",2022-01-04 14:52:23,0.18333333333333335
+"https://www.cnbc.com/2022/01/04/ford-plans-to-nearly-double-production-of-its-new-all-electric-f-150-lightning-pickup.html
+
+Ford on Tuesday said it plans to nearly double annual production capacity of its upcoming electric F-150 pickup to 150,000 vehicles per year at a plant in Michigan.
+
+The company cited strong consumer demand for the pickup as the main reason for the plans to increase production.
+
+Ford’s production plans come ahead of the automaker beginning to take actual orders for the vehicle on Thursday.
+
+Ford is slowly catching up on the EV production and becoming a major EV producer. The PE is currently only 32 and it is much more reasonable compared to other EV producer. Investors should keep holding F as ford should have another amazing 2022.",2022-01-04 14:45:06,0.240625
+"Hi all,
+
+I just finished the famous book ""Rich Dad Poor Dad"" and found it quite interesting, partly maybe even a bit inspiring, however, I did not really learn anything new. I think the book was written for people that are completely new to the investing world. And I would definitely not consider myself new here.
+
+Therefore, my question: What are your book recommendations (or must-reads) for intermediate level investors? Preferably focusing on the stock market, not so much on real estate. Any related topic is welcome. 
+
+Thanks in advance and sorry for any mistakes, English is not my native language.",2022-01-04 14:14:49,0.1552556818181818
+"I am getting more irritated with fidelity lately and was considering IBKR specifically for its very low margin cost.  I was curious how the user experience was for people who made this switch or use it in general.  I am still researching if lite or pro would be right for me on this account as well.  I do mostly selling cc's and csp's, dividend stocks, and some option trading (a few a month when i see an opportunity).  I also have my stocks I hold for growth as well but I doubt the experience will be much different on IBKR for that.  By experience I mean trades executing on time and at correct or better price and the use of their web or desktop interface.  Phone trading is not a requirement for me but could be a plus.",2022-01-04 13:58:55,0.08392857142857144
+All my open position is positive and it's saying that ny total position value is $750 can I assume correctly that when I close these position that isn't the amount of money I'll be earning or am I wrong?,2022-01-04 13:49:54,-0.06818181818181818
+I've managed to get a bit of scratch and most of my money is in T stock. I'm doing it for the dividends but seeing as I will be receiving quarterly feels like it might be a bit foolish on my part. Are there any other stocks or ETFs that I can diversify into? I just want to avoid putting all my eggs into one basket.,2022-01-04 13:32:03,0.1875
+"Complete idiot here. I’m saving up  money to move in with my girlfriend at the end of July. $135 a week is about what I would need, but in case I mess up I’m going to be putting $150 into it. I currently make about $2,000 a month working at a gas station. I’m going to DoorDash for a 2nd job while going to college. My rent is $1,087, my electric is $125, my bills are about $525. My gasoline cost is about $120 an usually my groceries cost me about $50 a month. Before DoorDashing I would only have $93 left over. I do get paid tomorrow, but as of right now I have $1 in my bank account. 
+I know this is completely stupid an extremely risky to basically make my savings account my investment portfolio, but really what choice do I have? If you don’t generate capital in a capitalist system then you can never get ahead.
+I’m going to try to have some fun with my piss poor reality. Each week until I move out in July, I’m going to be buying $150 worth of different stocks, using different techniques an I will be selling them all at the end of July.
+Here are the current shares I have:
+NAKD - 7 shares - $5.40
+PROG - 16 shares - $2.25
+PTON - 1 Share - $35.20
+SIRI - 2 Shares - $6.36
+BIOL - 4 Shares - $0.42
+
+Wish me luck, I will detail my journey each week",2022-01-04 12:59:35,-0.07579365079365079
+"My mom recently got 30K€ from her life insurance. With inflation coming I don't want her to keep it in cash but put it in some ETFs. With VTI not available in Germany I chose a nasdaq100, MSCI World and MSCI Emerging Markets ETF for her and am thinking about the proper distribution between them (my personal take is that technology will keep crushing it but that's obviously speculation).
+
+So I am hoping you guys have some insight on what to do in this case. Thanks!",2022-01-04 12:04:42,0.0642857142857143
+"The meme stock scheduled posts will run Mon to Fri and won't be a sticky; you're probably seeing this because automod sent you here or you woke up early Wall St time; good morning!
+
+------
+
+Welcome traders who just can't help them selves discuss the same exact stock that's been discussed 100s of times a day.  I get it, you want to talk about what's popular, what's hot, and that 1.. single.. stock you like.. well here you go!  Some helpful links just for you:
+
+* [Previous meme stock threads](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3A%28common+OR+meme%29&restrict_sr=on&include_over_18=on&sort=new&t=all)
+* [Previous discussions on overlooked (and possibly undervalued) stocks](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Aoverlooked&restrict_sr=on&include_over_18=on&sort=new&t=all)
+* [General discussions](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Adiscussion&restrict_sr=on&include_over_18=on&sort=new&t=all)
+* [The **original GME megathread**](https://www.reddit.com/r/stocks/comments/layb68/rstocks_gme_megathread/) with a ton of useful information
+* [Use Finviz for aggregated news on your favorite stock](https://finviz.com/quote.ashx?t=gme)
+
+An important message from our mod u/TCGYT [regarding meme stocks.](https://www.reddit.com/r/stocks/wiki/meme-stocks-warning)
+
+Lastly if you need professional help:
+
+* Problem Gambling:  Call/Text: 1-800-522-4700 or [chat online now.](https://WWW.NCPGAMBLING.ORG/CHAT)
+* Crisis Hotline (24/7): 1-800-273-TALK (8255) (Veterans, press 1) or Text “HOME” to 741-741",2022-01-04 12:00:14,0.23038847117794486
+"Stocks is obviously a risk. You can alot depending on a company's performance. You can earn lesser amount of money for a safer long term investment but that too is risky in case company suddenly has to face some problems and they have to declare bankruptcy. 
+
+So my fear and question is how do people choose which company to invest in for long term without worrying if that company will go bankrupt, And totally dissolve and disappear? 
+
+For example Chrysler went bankrupt and it was saved by fiat. So it didn't dissolve. Conseco managed to get out of bankruptcy. Etc. 
+
+So how to be confident to invest in stock without worrying that a company will disappear along with all of your investment? Or is it that companies come back from bankruptcy and your money can be saved?",2022-01-04 11:44:28,0.05
+"I've been doing about a year and a half of investing/swing trading, and some things still surprise me. 
+
+I learned that you buy the rumor and sell the news. usually stocks dip after major positive announcements that fit the expectations. So I expected to TSLA to dip at least slightly after people take profits on a pretty obvious Q4 sales numbers report. 
+
+People knew that Tesla would exceed earnings, and delivery predictions for Q4. So why did the stock go up 14% after the announcement? 
+
+I understand that TSLA isn't a typical stock in terms of stock price movements because of the fanbois and media coverage. But I'd still want to apply this to general investing principles and strategies that I should watch out for, or that I missed this time around.
+
+Edit: thanks for answering my questions. Really appreciate it.",2022-01-04 11:28:12,0.017126623376623386
+"I know posts like these are common but at this point I need a fresh set of eyes, perspective, and knowledge to help me make a better decision. 
+
+I recently opened a SEP IRA with Vanguard and am considering my options for 2022. I have been historically investing in ETF's for a few years now, particularly, VOO and some VONG in the past year. Initially, my intention was to buy $58k worth of VOOG or VONG and just forget it but after missing on some gains in 2021, I've been considering investing in individual stocks rather than index investing as well.  
+
+I refuse to buy any speculative plays with this money and so I have narrowed down to a few individual stocks that I feel will continue to grow into the future (not just 2022) and would appreciate all and ay input. I'm going to start with the big three, of course. 
+
+1. AAPL: seems like a very safe play. There is a potential, new, smaller iPhone coming out and with their foray into processors recently they have been on fire. I don't think AAPL is going anywhere anytime soon but I am a little worried about their lack of expansion into more of the cloud computing space, than, say, MSFT or others. 
+2. MSFT: I think I remember when this stock was $50 something dollars... However, I am having a hard time purchasing it at $330 something right now. I don't believe it is overvalued but the price growth makes me cautious. Regardless, I would buy and hold this even at these levels. 
+3. GOOG: I haven't looked too much into but this GOOG seems like a very safe bet as well, however, besides ""expert"" ratings, I really haven't looked too much into it. frankly, I've been a little anti- google for years but can't ignore that this is a great play. 
+
+Others that I am considering and would like some input on:
+
+ASML, and TSM - did someone say chip shortage? they just had a fire at one of their factories (I think damage is minimal) but this seems like a great stock to hold and buy long term, however, TSM seems a lot more attractive and cheaper at $130 something. I do believe they are one of the few, larger, compnies that have capabilities to manufacture chips and are in a great position to grow with AMD, NVDA and others' thirst for semiconductors.
+
+&#x200B;
+
+Others: CRM, NET, CRWD, PANW, MRVL similar as above. I've done some research on these stocks and while PANW seems like a very bet I would like some input on the rest of these. 
+
+RNG- this one, I have no idea. They've lost so much in the last year, yet, it a ""strong buy"" everywhere. I don't think the stock will bounce back soon but I could be completely wrong here.
+
+I've been reading about DCA vs lump sump buying and would, ideally, like to invest it all in one stock but am open to ideas. In the grand scheme of things, $58k really isnt much, therefore would like to invest it in one stock.
+
+&#x200B;
+
+Thanks for all your input.",2022-01-04 11:27:10,0.14181555817919458
+"I own shares in hxoh. Earlier they announced that they were splitting and I would be issued shares in the new company.
+
+That has now changed, they announced that portion of the business was being sold to WLK.
+
+Now they have announced that the parent company hxoh is being purchased by American securities, contingent on the WLK sale.
+
+
+So how does this effect me now? Will I end up with WLK stock and how much, and cash from American securities and how much? 
+
+Assuming 100 shares(easy maths)?
+
+
+
+
+edit: PR https://investors.hexion.com/news-releases",2022-01-04 10:32:46,0.12954545454545455
+"This is the daily discussion, so anything stocks related is fine, but the theme for today is on technical analysis (TA), but if TA is not your thing then just ignore the theme and/or [post your arguments against TA here](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+%22r%2Fstocks+semiannual+arguments+against+TA%22&restrict_sr=on&include_over_18=on&sort=new&t=all) and not in the current post.
+
+Some helpful day to day links, including news:
+
+* [Finviz](https://finviz.com/quote.ashx?t=spy) for charts, fundamentals, and aggregated news on individual stocks
+* [Bloomberg market news](https://www.bloomberg.com/markets)
+* StreetInsider news:
+  * [Market Check](https://www.streetinsider.com/Market+Check) - Possibly why the market is doing what it's doing including sudden spikes/dips
+  * [Reuters aggregated](https://www.streetinsider.com/Reuters) - Global news
+
+-----
+
+**Technical analysis (TA)** uses historical price movements, real time data, indicators based on math and/or statistics, and charts; all of which help measure the trajectory of a security.  TA can also be used to interpret the actions of other market participants and predict their actions.
+        
+The main benefit to TA is that everything shows up in the price (commonly known as **""priced in""**):  All news, investor sentiment, and changes to fundamentals are reflected in a security's price.
+
+TA can be useful on any timeframe, both short and long term.
+
+Intro to technical analysis by [Stockcharts chartschool](https://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:introduction_to_technical_indicators_and_oscillators#benefits_and_drawbacks_of_leading_indicators) and their [article on candlesticks](https://stockcharts.com/school/doku.php?id=chart_school:chart_analysis:introduction_to_candlesticks)
+
+If you have questions, please see the following word cloud and click through for the wiki:
+
+[Indicator - Trade Signals - Lagging Indicator - Leading Indicator - Oversold - Overbought - Divergence - Whipsaw - Resistance - Support - Breakout/Breakdown - Alerts - Trend line - Market Participants - Moving average - RSI - VWAP - MACD - ATR - Bollinger Bands - Ichimoku clouds - Methods - Trend Following - Fading - Channels - Patterns - Pivots](https://www.reddit.com/r/stocks/wiki/ta-themed-post)
+
+See our past [daily discussions here.](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+%22r%2Fstocks+daily+discussion%22&restrict_sr=on&sort=new&t=all)  Also links for:  [Technicals](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Atechnicals&restrict_sr=on&include_over_18=on&sort=new&t=all) Tuesday, [Options Trading](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Aoptions&restrict_sr=on&include_over_18=on&sort=new&t=all) Thursday, and [Fundamentals](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Afundamentals&restrict_sr=on&include_over_18=on&sort=new&t=all) Friday.",2022-01-04 10:30:13,-0.011217948717948716
+"Hey everyone. Beginner here and wanted to get your thoughts on what books to read to be a competent investor in the stock market.
+
+So far I've read: a beginner's guide to the stock market by Matthew Kratter, and one up on wall street.
+
+Liked both books, but especially loved Peter lynch's writing.
+
+I tried starting with the intelligent investor but dear god was that an awful read. I'm used to dense reading in science and law in an academic capacity, but I just couldn't get into that book at all.
+
+After the first two books that I mentioned, what books should I continue with in a chronological order? 
+
+Thank you for taking the time to offer suggestions :)",2022-01-04 10:02:11,0.25
+"I've been investing for a while, since late 2016. I've been exclusively in index funds ([following JL Collins](https://jlcollinsnh.com/)), but recently started my own portfolio: 20% in which I pick stocks.
+
+I use Morningstar to research the company. In it, to compute the ""fair value"" of a company, they use different metrics for different companies. 
+
+AAPL  - P/E ratio
+
+GOOG.L - EV/EBITDA
+
+BYND - Price/Adjusted EBITDA 
+
+I understand different companies need different metrics but I don't understand the specific choices. If any of you could shed some light/insights or resources on why they choose a specific metric per company, I would find it valuable.",2022-01-04 08:15:49,0.09090909090909091
+"I have a couple of nieces/nephews coming into the world soon and would like to buy them stocks that will be gifted to them at the age of 25. I'm planning on doing 5k each. My plan is to do 4k eft's and 1k in something riskier. After seeing what Apple accomplished in a little over 30 years, I think it would be a fun bet without much of a consequence if it all went to one company that isn't huge yet. I'm not expecting to find the next Apple and I understand less accomplished companies are riskier, but it's a risk I'm happy to take. I'm not great at research and dd when it comes to stocks, my personal portfolio is relatively safe I think, made up of etf's, aapl, msft, and my dumbest risk (that paid off) was tsla. I'm content with my holdings and they are long term as well (at least 10 more years). But I want to do something fun with a bit of risk for my new family members! Any suggestions?",2022-01-04 07:45:08,0.16479377104377105
+"I have a couple of nieces/nephews coming into the world soon and would like to buy them stocks that will be gifted to them at the age of 25. I'm planning on doing 5k each. My plan is to do 4k eft's and 1k in something riskier. After seeing what Apple accomplished in a little over 30 years, I think it would be a fun bet without much of a consequence if it all went to one company that isn't huge yet. I'm not expecting to find the next Apple and I understand less accomplished companies are riskier, but it's a risk I'm happy to take. I'm not great at research and dd when it comes to stocks, my personal portfolio is relatively safe I think, made up of etf's, aapl, msft, and my dumbest risk (that paid off) was tsla. I'm content with my holdings and they are long term as well (at least 10 more years). But I want to do something fun with a bit of risk for my new family members! Any suggestions?",2022-01-04 07:41:45,0.16479377104377105
+"Hello everyone, 
+
+Recently graduated college and started my career, created a Roth IRA account a couple of days ago. Was trying to get some ideas on what are the best dividends stocks to currently buy or to look out for (I will be setting this up so all dividends are DRIP)
+
+Thank you.",2022-01-04 07:04:02,0.3333333333333333
+"Hello everyone! I am currently a high school senior who has pretty much devoted his entire last 2 years to studying the markets. I want to conduct some research but I’m not sure what would be a good idea to start with first. I am currently taking a look at all 2020 and 2021 openings and closing for each month in the major index’s to notice patterns that could potentially help me with the 2022 year. I am also looking at the 10 year yield to see the correlation between them. 
+
+If anyone has ANY ideas please let me know. I am enthralled by the markets and want to get much deeper into the analysis of the markets as a whole. 
+
+
+TLDR: Need something to research. Please leave suggestions below.",2022-01-04 06:38:05,0.13634615384615384
+"Hi, I (M22) am looking for a resource ( YouTube channel , book, ect) that teaches beginners on how to do options trading. I am new to all of this and It is a bit difficult for me to comprehend all of the ""calls"" and ""put"" options when it comes to options trading.",2022-01-04 05:30:25,-0.18181818181818182
+"I'm fairly new to stocks jumping in about a year ago now. Since then I've grown a general interest into trading and began to grow my knowledge, eventually getting into calls and puts.
+
+I've recently wanted to start looking into IPO's. Specifically, $AFCG had caught my attention. Can anyone  give me any good advice on IPO's and what to consider when purchasing them?",2022-01-04 05:11:15,0.2215909090909091
+"Newbie here. I purchased some VFIAX through fidelity and I was charged $75 transaction fee. I then noticed that if I wanted to buy more, I’d have to pay the fee each time. Is this normal? Im wondering if I should sell it and get a stock w/o the fees? Or continue to contribute?",2022-01-04 04:51:25,0.325
+"Hey, I'm invested in AMD and this is my first time going through an acquisition. 
+
+I need to raise cash soon and am wondering what will happen to AMD stock in the short term after the merger is complete around Q1? 
+
+I understand that the stock can do anything but what happens on average to the acquiring company's stock price?",2022-01-04 04:42:37,0.049999999999999996
+"I am pretty tech heavy in my portfolio and I'm looking for some consumer staples stocks to balance it out. What would you suggest? Are there any good values our there with a chance for growth? 
+
+I will of course do my own research based on your suggestions before buying.",2022-01-04 04:25:57,0.3375
+"I have been reading up on options trading and I was looking into selling covered calls. I was wanting to make sure I understand the potential risks correctly.
+
+So let's say I hold 100 shares of XYZ company for $25/share. I want to sell a covered call for, let's say a week out. I put a strike price of $27/share and let's say the options are $0.15 each. I only have 100 shares so I sell one contract and gain $15 (minus any fees). If the share price does not exceed $27 by expiration, the call is highly unlikely to be exercised by the buyer so I essentially profit the $15 (minus fees) that I earned selling the option.
+
+Now if the price goes up to, let's say, $28/share, the call is likely to be exercised, and I'm forced to sell my 100 shares for $27/each. In this scenario, I have gained the $15 premium (minus fees), but now I've also sold for $2 profit per share for an additional $200, but the risk here is I missed out on potentially another $100 if I had not sold the options to begin with. While this limits the profit made on the shares themselves, it's also not necessarily bad because I didn't lose any capital, either.
+
+And finally, let's say the share price goes down to $22/share. The call is extremely unlikely to be exercised and I just pocketed the premium for selling the call. But, if for some weird reason the call gets exercised, it's not bad because I just sold the shares for $27 each when they are only trading at $22 each now. Obviously highly unlikely the call would be exercised, but just wanted to throw this scenario in just to make sure I understand all possibilities.
+
+And, regardless of any other scenario, if I buy back the option I sold before expiration and before it was exercised, I basically pay the current market value, which ideally is less than what I initially sold it for, so I still pocket some money, but not quite the full initial premium.
+
+Is all the above correct? And am I missing anything that I should know before diving into it?
+
+And another question about actually selling the contract. If I only own 100 shares, obviously I can only ""afford"" to have one call exercised. Would this stop me from potentially selling multiple options, maybe 1 per week or month, and if one were to get exercised I would just close out the remainder? Or am I only allowed to have one ""active"" contract per 100 shares I earn, preventing me from selling another with a different expiration if I already have one out?
+
+Thank you in advance!",2022-01-04 04:23:21,-0.01873219373219374
+"Omicron seems like it may be getting out of control.  Some restrictions and shut downs(other countries) may be on the way.  What would be a better investment?  
+
+Any other recommendations and thoughts?
+
+Thank you",2022-01-04 04:09:00,0.1875
+"I am timid of TSLA and NVDA, although they seem to be the premiere securities of this time. I am aware of stocks like VISA selling at a discount. COST seems like a safe investment with ample opportunity. This is the stock I will probably begin to analyze in contrast to companies like Walmart and Target. I will also analyze AZO and prepare for Mobileye, an Intel Spinoff and Intel stake owned company trading at 25x revenue going halfway into 2022.",2022-01-04 04:02:45,0.375
+"I noticed Teladoc, as well as fellow telehealth company Goodrx, both have negative values for their earnings per share. Why is this if both companies are profitable? Sorry if this is a dumb mistake, I'm new to looking at financials.",2022-01-04 03:42:30,-0.2596590909090909
+"I'm planning on opening a roth and basically I'm wondering where I can open it to have access to things like trusts that the broker for my regular brokerage account doesn't offer. I'm especially interested in things like things like the trusts that are commonly used in the UK, but I don't know if those are available to Americans with roths. Where can I get the most flexibility? 
+
+I already have a 401k and a regular IRA so I'd really like to open a roth someplace that I can get exposure to some different assets than regular target retirement accounts and indexes.",2022-01-04 03:40:41,0.11818181818181818
+"AAPL is 6.7% of my portfolio. My cost basis is $103 a share.  I now have a 76% gain in AAPL .
+
+MSFT is now 9.4% of portfolio. Cost basis $211. 
+
+The shares are mostly long so I could trim.
+
+I know most say ""let your winners ride"", but isn't part of a winning long term strategy to sell when at all time highs or at least trim?
+
+A lot of people including Tom Lee think that the first half of 2022 is gonna get ""rough"" and that ""mega caps will lead a 10% correction most likely"".
+
+Doesn't it make sense to trim a little off my mega cap names and buy in lower if we do correct?
+
+I mean AAPL is now at $180+.  It wouldn't be that difficult I would think to sell a few shares now and hold for a few months in cash and but back in at $160 or something correct?
+
+The same could be said for MSFT and maybe even my GOOGL?
+
+Just trying to do what's smart.
+
+Thanks .",2022-01-04 03:35:15,0.005137844611528817
+" 
+
+Put together an educational video series using youtube videos. Organized the videos into a course that starts with the most basic investing concepts designed for someone that doesn't even know what a stock is and progresses to more advanced and complex topic such as fundamental analysis, and portfolio diversification. Hopefully people find this useful. Did this for all of the people in rl asking me to teach them to invest, so I created this course so they can teach themselves. Now sharing with the internet.
+
+The link is to my Google Drive where I host the course. Will update and add to this regularly, check back for changes.
+
+[https://docs.google.com/document/d/1E0NkVETbnndxvCH\_LrJS9UXu\_CTJhtga/edit?usp=sharing&ouid=100739865944642715598&rtpof=true&sd=true](https://docs.google.com/document/d/1E0NkVETbnndxvCH_LrJS9UXu_CTJhtga/edit?usp=sharing&ouid=100739865944642715598&rtpof=true&sd=true)",2022-01-04 02:40:11,0.16499999999999998
