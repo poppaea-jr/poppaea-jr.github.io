@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SHOP&apikey=6GII65QY8AC9K3Q2&datatype=csv",
+       "format": {
+           "type":"csv"}},
+
+
+    "title": {
+        "text": "Shopify Inc Daily Close Price",
+        "subtitle": "On Canada - Toronto Stock Exchange. Source: Alpha Vantage API",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"DarkCyan",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+
+    "encoding": {
+      "x": {
+          "field": "timestamp",
+          "type": "temporal",
+          "title":null},
+      "y": {
+          "field": "close",
+          "type": "quantitative",
+          "title":null}
+    }
+}
