@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/WSB_polarity.csv",
+       "format": {
+           "type":"csv"}},
+
+
+    "title": {
+        "text": "Online Sentiment in the r/WallStreetBets SubReddit",
+        "subtitle": "Period from 31/12 to 06/01. Using TextBlob. Source: PRAW",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"DarkCyan",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+
+    "encoding": {
+      "x": {
+          "field": "DateTime",
+          "type": "temporal",
+          "title":null},
+      "y": {
+          "field": "polarity",
+          "type": "quantitative",
+          "title":null}
+    }
+}
