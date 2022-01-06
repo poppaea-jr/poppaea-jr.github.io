@@ -19,7 +19,8 @@
     "height":300,
 
     "mark":{
-        "type": "line",
+        "type": "area",
+        "point": false,
         "color":"DarkCyan",
         "strokeWidth":2,
         "opacity":1},
