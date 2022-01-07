@@ -62,7 +62,40 @@
   </tbody>
 </table>
 
+<p>The colab notebook for this PRAW fetch can be found <a href="https://colab.research.google.com/drive/1NxCkHR_M6weHpMxN3s88cJV_gvVfHD_q?usp=sharing">here</a>.</p>
+
+<p> </p>
+
+<p> To compare the sentiment of these posts to the performance of the stock market overall, I chose to consider the closing prices of the S&P500.</p>
+
+<!--Chart 23 - first sentiment polarity -->
+<div class="chart" id="chart23">
+  <script>     var myChart23 = "charts/SP500new.json";
+    vegaEmbed('#chart23', myChart23);
+  </script>
+</div>
 <p></p>
+
+<p>I'm particularly interested in how online sentiment creates changes in the stock market, so I calculated the percentage changes in this<a href="https://colab.research.google.com/drive/1gjyODYkXdZDXh5aABt-9P6aRxgJhkHfq?usp=sharing"> colab notebook</a>.</p>
+
+<!--Chart 24 - first sentiment polarity -->
+<div class="chart" id="chart24">
+  <script>     var myChart24 = "charts/SP_Pct_Chn.json";
+    vegaEmbed('#chart24', myChart24);
+  </script>
+</div>
+
+<p>Measuring polarity</p>
+
+<p>The Empirical Approach</p>
+
+
+
+
+
+
+
+
 
 <!--Chart 20 - first sentiment polarity -->
 <div class="chart" id="chart20">
@@ -89,27 +122,14 @@
 </div>
 <p> The Stata do file for this wrangling can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/daily_polarity.do">here</a>.</p>
 
-<!--Chart 23 - first sentiment polarity -->
-<div class="chart" id="chart23">
-  <script>     var myChart23 = "charts/SP500new.json";
-    vegaEmbed('#chart23', myChart23);
-  </script>
-</div>
-<p></p>
 
-<!--Chart 24 - first sentiment polarity -->
-<div class="chart" id="chart24">
-  <script>     var myChart24 = "charts/SP_Pct_Chn.json";
-    vegaEmbed('#chart24', myChart24);
-  </script>
-</div>
-<p><a href="https://colab.research.google.com/drive/1gjyODYkXdZDXh5aABt-9P6aRxgJhkHfq?usp=sharing">Colab notebook</a>.</p>
 
-<h3> Conclusions: </h3>
 
 <p>Fetching posts from WallStreetBets: <a href="https://colab.research.google.com/drive/1NxCkHR_M6weHpMxN3s88cJV_gvVfHD_q?usp=sharing"> here. </a></p>
 
 <p>Training my own ML model using <a href="https://colab.research.google.com/drive/15oyma4ilsnxNu_84GpiF52LWCuAyjkQb?usp=sharing"> Multinomial Naive Bayes </a>.</p>
+
+<h3> Conclusions: </h3>
 
 </body>
 </html>
