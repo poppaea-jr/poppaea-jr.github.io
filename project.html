@@ -22,26 +22,20 @@
       
       </head>
 <body>
-
       <h1> My Project Page </h1>
 
       <div class="wrap">
-        <a class="textLink" href="index"> Head back to my homework portfolio here </a>
+        <p> Head back to my homework portfolio <a class="textLink" href="index">here</a>.</p>
         
-
-      <h3> Project Aims: </h3>
-      <p> For my final project, I am testing whether online opinion can be correlated with stock market fluctuations. </p>
-      <p> I trained this model using the Multinomial Naive Bayes classifier and a dataset of stock market related tweets from Kaggle. 
-            I then used the Python Reddit API Wrapper to fetch data from the r/stocks subreddit, the code for which is shown <a href="https://colab.research.google.com/drive/17OCcmBFauapZrApcJynj8s4YZQ_t0BAX?usp=sharing">here</a>.
-            I then applied my model to this data in <a href="https://colab.research.google.com/drive/15oyma4ilsnxNu_84GpiF52LWCuAyjkQb?usp=sharing">this colab notebook</a>.</p>
+        <h3> Can the opinions expressed in online spaces be linked to fluctuations in prices in the stock market? </h3>
       
+<p> To analyze the most recent changes in online sentiment, I wanted to access my text data using scraping or API.  I chose to use the Python Reddit API Wrapper (PRAW) to gather text from the r/WallStreetBets subreddit, as Reddit makes it’s data particularly accessible. </p>
 <!--Chart 20 - first sentiment polarity -->
 <div class="chart" id="chart20">
       <script>     var myChart20 = "charts/polarity.json";
         vegaEmbed('#chart20', myChart20);
       </script>
     </div>
-
 <p><a href="https://colab.research.google.com/drive/1FJrxik1chE4F8PxdLyPPJtePLUFO93Au?usp=sharing">Colab notebook</a>.</p>
 
 <!--Chart 21 - first sentiment polarity -->
@@ -50,18 +44,15 @@
     vegaEmbed('#chart21', myChart21);
   </script>
 </div>
-
 <p><a href="https://colab.research.google.com/drive/13d-6nuAQoEr__5ENtncWc_VsKvQMeHo2?usp=sharing">Colab notebook</a>.</p>
 
 <p> On this same set of posts, I then performed some data processing in Stata, in order to find the daily average polarity score.</p>
-
 <!--Chart 22 - first sentiment polarity -->
 <div class="chart" id="chart22">
   <script>     var myChart22 = "charts/WSB_AVG_POL.json";
     vegaEmbed('#chart22', myChart22);
   </script>
 </div>
-
 <p> The Stata do file for this wrangling can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/daily_polarity.do">here</a>.</p>
 
 <!--Chart 23 - first sentiment polarity -->
@@ -70,7 +61,6 @@
     vegaEmbed('#chart23', myChart23);
   </script>
 </div>
-
 <p></p>
 
 <!--Chart 24 - first sentiment polarity -->
@@ -79,9 +69,13 @@
     vegaEmbed('#chart24', myChart24);
   </script>
 </div>
-
 <p><a href="https://colab.research.google.com/drive/1gjyODYkXdZDXh5aABt-9P6aRxgJhkHfq?usp=sharing">Colab notebook</a>.</p>
 
 <h3> Conclusions: </h3>
+
+<p>Fetching posts from WallStreetBets: <a href="https://colab.research.google.com/drive/1NxCkHR_M6weHpMxN3s88cJV_gvVfHD_q?usp=sharing"> here. </a></p>
+
+<p>Training my own ML model using <a href="https://colab.research.google.com/drive/15oyma4ilsnxNu_84GpiF52LWCuAyjkQb?usp=sharing"> Multinomial Naive Bayes </a>.</p>
+
 </body>
 </html>
