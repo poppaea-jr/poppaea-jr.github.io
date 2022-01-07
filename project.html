@@ -95,22 +95,15 @@
 </div>
 <p><a href="https://colab.research.google.com/drive/13d-6nuAQoEr__5ENtncWc_VsKvQMeHo2?usp=sharing">Colab notebook</a>.</p>
 
-<p> On this same set of posts, I then performed some data processing in Stata, in order to find the daily average polarity score, the code for which can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/daily_polarity.do">here</a>.</p>
-<!--Chart 22 - first sentiment polarity -->
-<div class="chart" id="chart22">
-  <script>     var myChart22 = "charts/WSB_AVG_POL.json";
-    vegaEmbed('#chart22', myChart22);
-  </script>
-</div>
-
-<p>I repeated this process for the largest possible dataset for r/stocks (982 text posts) </p>
+<p>I combined the API posts fetch and polarity analysis in this<a href="https://colab.research.google.com/drive/1A2LFGAsgmIev6hK05JuAApSLtGbLKhd5?usp=sharing">Colab notebook</a>.</p>
+<p>I then performed some data processing in Stata for the largest possible dataset for r/stocks (982 text posts), in order to find the daily average polarity score, the code for which can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/daily_polarity.do">here</a>.</p>
 <!--Chart 27 - first sentiment polarity -->
 <div class="chart" id="chart27">
   <script>     var myChart27 = "charts/daily_r_stocks.json";
     vegaEmbed('#chart27', myChart27);
   </script>
 </div>
-<p>Here I combined the API posts fetch and polarity analysis in this<a href="https://colab.research.google.com/drive/1A2LFGAsgmIev6hK05JuAApSLtGbLKhd5?usp=sharing">Colab notebook</a>.</p>
+
 
 <p>The Empirical Approach</p>
 
@@ -141,7 +134,12 @@
 </div>
 <p><a href="https://colab.research.google.com/drive/1FJrxik1chE4F8PxdLyPPJtePLUFO93Au?usp=sharing">Colab notebook</a>.</p>
 
-
+<!--Chart 22 - first sentiment polarity -->
+<div class="chart" id="chart22">
+  <script>     var myChart22 = "charts/WSB_AVG_POL.json";
+    vegaEmbed('#chart22', myChart22);
+  </script>
+</div>
 
 </body>
 </html>
