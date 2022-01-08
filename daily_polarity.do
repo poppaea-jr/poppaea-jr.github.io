@@ -2,11 +2,11 @@ clear all
 set more off
 
 capture log close
-log using "WSB_Polarity.log", replace
+log using "stocks_Polarity.log", replace
 cd "C:\Users\poppa\OneDrive - University of Bristol\3rd\data science\project"
 
 // importing the CSV data
-import delimited "C:\Users\poppa\OneDrive - University of Bristol\3rd\data science\project\WSB_polarity.csv"
+import delimited "C:\Users\poppa\OneDrive - University of Bristol\3rd\data science\project\r_stocks_polarity.csv"
 browse
 
 // splitting the string variable containing dates and time stamps 
@@ -25,4 +25,6 @@ format numdate %td
 collapse polarity, by(numdate)
 
 // exporting the data
-outsheet numdate polarity using WSB_AVG_POL.csv , comma nolabel 
+outsheet numdate polarity using daily_stocks_polarity.csv , comma nolabel 
+
+log close
