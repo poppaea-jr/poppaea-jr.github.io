@@ -105,7 +105,16 @@
 <p>There is not enough data here to draw any conclusions, and this is limited by PRAW only collecting around 900 text posts at once.</p>
 <p>To get around this, I have implimented a loop.</p>
 
+<!--Chart 29 - first sentiment polarity -->
+<div class="chart" id="chart29">
+  <script>     var myChart29 = "charts/loop_1.json";
+    vegaEmbed('#chart29', myChart29);
+  </script>
+</div>
 
+<p>This chart has polarity scores for the last month (08/12/2021 - 08/01/2022), but the loop took around 2 hours to run. See the <a href="https://colab.research.google.com/drive/1eXVo8NEg0AIMauVrTx4TkMDASwHuXQ9B?usp=sharing">Colab notebook.</a></p>
+
+<p> </p>
 
 </body>
 </html>
