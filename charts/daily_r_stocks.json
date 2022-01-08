@@ -5,7 +5,7 @@
       "format": {"type": "csv"}
     },
     "title": {
-      "text": "Online Sentiment in the r/Stocks SubReddit",
+      "text": "Daily Average Sentiment in the r/Stocks SubReddit",
       "subtitle": "Period from 17/12 to 07/01. Using TextBlob. Source: PRAW",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
