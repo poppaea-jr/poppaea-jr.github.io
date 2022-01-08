@@ -1,0 +1,9 @@
+
+<!--Chart 23 - first sentiment polarity -->
+<div class="chart" id="chart23">
+  <script>     var myChart23 = "charts/SP500new.json";
+    vegaEmbed('#chart23', myChart23);
+  </script>
+</div>
+<p></p>
+
