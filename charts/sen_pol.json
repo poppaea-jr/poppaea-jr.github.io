@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "Percentage Change in Sentiment and Percentage Change in the S&P500 Index",
+    "data": {
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/pol_sp.csv",
+      "format": {"type": "csv"}
+    },
+    "title": {
+      "text": "Online Sentiment and the Market",
+      "subtitle": "Sources: PRAW, SP Global",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "height": 300,
+    "width": 270,
+    "mark": {"type": "circle", "size": 75},
+    "encoding": {
+      "x": {
+        "field": "pol_chn",
+        "type": "quantitative",
+        "title": "% Change in Online Sentiment"
+      },
+      "y": {
+        "field": "sp_chn",
+        "type": "quantitative",
+        "title": "% Change in the S&P500 Index"
+      },
+      "color": {
+        "timeUnit": "date",
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "scale": {"scheme": "inferno"}
+      },
+      "tooltip": [
+        {"field": "date", "type": "temporal", "title": "date"}
+      ]
+    }
+  }
