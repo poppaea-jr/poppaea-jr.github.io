@@ -18,6 +18,18 @@ table{
     max-width: 400px;
 }
 
+img{
+  width: 400px;
+  border-width: 10px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: white;
+  margin: auto;
+
+
+}
+
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
