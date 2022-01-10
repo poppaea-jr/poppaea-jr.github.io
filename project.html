@@ -102,8 +102,8 @@
   </script>
 </div>
 
-<p>There is not enough data here to draw any conclusions, and this is limited by PRAW only collecting around 900 text posts at once.</p>
-<p>To get around this, I have implimented a loop.</p>
+<p>The remaining problem now is that my PRAW fetch can only collect around 900 posts, which are simply the most recent. In order to be able to specify the timeframe of the posts, I looked to the <a href="https://pushshift.io/">Pushshift API</a></p>
+<p>The limitation of this method is that Pushshift can only pull 100 posts at a time, so I used a loop to circumvent this. Due to the large amount of data being fetched and processed, I chose to use a Jupyter notebook for this. This notebook streamlines the fetching and polarity calculation of posts for any specified period. <a href="">Download the notebook</a>.</p>
 
 <!--Chart 29 - first sentiment polarity -->
 <div class="chart" id="chart29">
