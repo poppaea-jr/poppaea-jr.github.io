@@ -29,7 +29,9 @@
 <div class="wrap">
 <a class="textLink" href="project"> see my main project here! :) </a>
 
-<h3>Homework 2: Embedding</h3>
+<h3>Homework 2:</h3>
+
+<p>Embedding charts from the <a href="rapidcharts.io">RapidCharts</a> webpage</p>
 
 <!--Chart 1 -->
   <div class="chart" id="chart1">
@@ -59,8 +61,8 @@
     </script>
 </div>
 
-    <h3> Week 2:</h3>
-    <p> Designing my own charts, the first of which sources data directly from the UK Government's Coronavirus API: </p>
+<h3>Homework 3:</h3>
+<p> Constructing my own charts. This chart accesses data live from the gov.uk API.</p>
   
 <!--Chart 4 -->
 <div class="chart" id="chart4">
@@ -70,7 +72,7 @@
   </script>
 </div>
 
-      <p> This second chart then uses data from the same API, but which is locally stored in my Github repository: </p>
+<p> This second chart then uses data from the same API, but which is locally stored in my Github repository: </p>
   
 <!--Chart 5 -->
 <div class="chart" id="chart5">
@@ -80,8 +82,8 @@
   </script>
 </div>
 
-<h3> Week 3:</h3>
-<p> In this first chart I have changed the data manually, adding a new series which is equal to the original series increased by 10%. The original data contained some missing values, which were dealt with using this <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/excel_errors.vba"> VBA code</a>, which removes the whole row where any cell contains a missing value.</p>
+<h3>Homework 4:</h3>
+<p>In this chart I have manually edited the data, adding a new series which is equal to the original series increased by 10%. The original data contained some missing values, which were dealt with using this <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/excel_errors.vba"> VBA code</a>, which removes the whole row where any cell contains a missing value.</p>
 
 <!--Chart 6 -->
 <div class="chart" id="chart6">
@@ -91,12 +93,12 @@
   </script>
 </div>
 
-<p> Secondly, for this charts I have written the data in-line in the JSON file of the chart specification: </p>
+<p>In this chart, I wrote the data manually in JSON within Vega Lite.</p>
 
 <!--Chart 7 -->
 <div class="chart" id="chart7">
   <script>
-    var myChart7 = "charts/hw3.json";
+    var myChart7 = "charts/greens.json";
     vegaEmbed('#chart7', myChart7);
   </script>
 </div>
