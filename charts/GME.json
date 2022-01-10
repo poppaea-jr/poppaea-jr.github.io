@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/GME.csv",
+       "format": {
+           "type":"csv",
+           "property": "date"}},
+
+
+    "title": {
+        "text": "Gamestop Stock Volumes",
+        "subtitle": "Source: Nasdaq historical data and a fictional final datapoint",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"DarkCyan",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+
+    "encoding": {
+      "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title":null},
+      "y": {
+          "field": "Volume",
+          "type": "quantitative",
+          "title":null}
+    }
+}
