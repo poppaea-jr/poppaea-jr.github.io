@@ -35,7 +35,7 @@
       "field": "average", 
       "type": "quantitative",
       "scale": {"domain": [1800, 1940]},
-      "title":null
+      "title": "methane (ppb)"
       }
 
 
