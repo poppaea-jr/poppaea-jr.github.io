@@ -33,7 +33,7 @@
 
 <p>Embedding charts from the <a href="rapidcharts.io">RapidCharts</a> webpage</p>
 
-<!--Chart 1 -->
+<!--Chart 1 - from RapidCharts-->
   <div class="chart" id="chart1">
       <script>
         var myChart1 = "charts/chart1_covidUKRegions.json";
@@ -43,7 +43,7 @@
 
     <p>  </p>
 
-<!--Chart 2 -->
+<!--Chart 2 - from RC-->
 <div class="chart" id="chart2">
     <script>
       var myChart2 = "charts/uk_unemp.json";
@@ -53,7 +53,7 @@
   
     <p>  </p>
 
-  <!--Chart 3 -->
+  <!--Chart 3 - from RC -->
   <div class="chart" id="chart3">
     <script>
       var myChart3 = "charts/btc.json";
@@ -64,7 +64,7 @@
 <h3>Homework 3:</h3>
 <p> Constructing my own charts. This chart accesses data live from the gov.uk API.</p>
   
-<!--Chart 4 -->
+<!--Chart 4 - from Gov.uk - API -->
 <div class="chart" id="chart4">
   <script>
     var myChart4 = "charts/newlfd.json";
@@ -74,7 +74,7 @@
 
 <p> This second chart then uses data from the same API, but which is locally stored in my Github repository: </p>
   
-<!--Chart 5 -->
+<!--Chart 5 from Gov.uk - local CSV-->
 <div class="chart" id="chart5">
   <script>
     var myChart5 = "charts/ONS Deaths chart coding.json";
@@ -86,7 +86,7 @@
 
 <p>In this chart I have manually edited the data, adding a final data point of 3,000,000.</p>
 
-<!--Chart 6 -->
+<!--Chart 6 - manipulating JSON -->
 <div class="chart" id="chart6">
   <script>
     var myChart6 = "charts/GME.json";
@@ -96,7 +96,7 @@
 
 <p>In this chart, I wrote the data manually inline in the JSON in Vega Lite.</p>
 
-<!--Chart 7 -->
+<!--Chart 7 - data in vega -->
 <div class="chart" id="chart7">
   <script>
     var myChart7 = "charts/greens.json";
@@ -130,24 +130,20 @@
 
 <p>For the first part of this homework I used the requests package in Python to make a call to the <a href="https://api.nasa.gov/">Nasa Power REST API</a>. See the fetch in <a href="https://colab.research.google.com/drive/1hVa2APEKzVQc1mcBmysLecXQl07H_hsm?usp=sharing">Google colab</a>.</p>
 
-
-
-<p>I created a loop in Python to batch download data for ozone emissions from the <a href="https://emissions-api.org/">Emissions API</a>. View the loop in my <a href="https://colab.research.google.com/drive/1KHKyiUUcBbU5U5RiAa5H1pEeHxMrmYd3?usp=sharing">Colab notebook</a>.</p>
-
-<!--Chart 10 - downloading API data using a loop -->
+<!--Chart 10 - downloading API data in Python -->
 <div class="chart" id="chart10">
   <script>
-    var myChart10 = "charts/methane_china.json";
+    var myChart10 = "charts/_.json";
     vegaEmbed('#chart10', myChart10);
   </script>
 </div>
 
-<p></p>
+<p>I created a loop in Python to batch download data for ozone emissions from the <a href="https://emissions-api.org/">Emissions API</a>. View the loop in my <a href="https://colab.research.google.com/drive/1KHKyiUUcBbU5U5RiAa5H1pEeHxMrmYd3?usp=sharing">Colab notebook</a>.</p>
 
-<!--Chart 11 - API using a loop -->
+<!--Chart 11 - downloading API data using a loop -->
 <div class="chart" id="chart11">
   <script>
-    var myChart11 = "charts/methane_uk.json";
+    var myChart11 = "charts/methane_china.json";
     vegaEmbed('#chart11', myChart11);
   </script>
 </div>
@@ -157,7 +153,7 @@
 <!--Chart 12 - API using a loop -->
 <div class="chart" id="chart12">
   <script>
-    var myChart12 = "charts/methane_india.json";
+    var myChart12 = "charts/methane_uk.json";
     vegaEmbed('#chart12', myChart12);
   </script>
 </div>
@@ -167,40 +163,50 @@
 <!--Chart 13 - API using a loop -->
 <div class="chart" id="chart13">
   <script>
-    var myChart13 = "charts/methane_us.json";
+    var myChart13 = "charts/methane_india.json";
     vegaEmbed('#chart13', myChart13);
+  </script>
+</div>
+
+<p></p>
+
+<!--Chart 14 - API using a loop -->
+<div class="chart" id="chart14">
+  <script>
+    var myChart14 = "charts/methane_us.json";
+    vegaEmbed('#chart14', myChart14);
   </script>
 </div>
 
 <h3>Homework 7: </h3>
 <p>I built a scraper in python to get data from the World Happiness Report Wikipedia. View the scraper in my <a href="https://colab.research.google.com/drive/1sJmrGpgLaUmHSYMFFsdRyG7dQkXRR9mN?usp=sharing">Colab notebook</a>.</p>
 
-<!--Chart 14 - scraping level 1 chart 1 -->
-<div class="chart" id="chart14">
+<!--Chart 15 - scraping level 1 chart 1 -->
+<div class="chart" id="chart15">
   <script>
-    var myChart14 = "charts/WHRchartT25.json";
-    vegaEmbed('#chart14', myChart14);
+    var myChart15 = "charts/WHRchartT25.json";
+    vegaEmbed('#chart15', myChart15);
   </script>
 </div>
 
 <p></p>
 
-<!--Chart 15 - scraping level 1 chart 2 -->
-<div class="chart" id="chart15">
+<!--Chart 16 - scraping level 1 chart 2 -->
+<div class="chart" id="chart16">
   <script>
-    var myChart15 = "charts/WHRchartB25.json";
-    vegaEmbed('#chart15', myChart15);
+    var myChart16 = "charts/WHRchartB25.json";
+    vegaEmbed('#chart16', myChart16);
   </script>
 </div>
 
 <h3>Homework 8:</h3>
 <p> Data Stories </p>
 
-<!--Chart 16 - supporting or refuting an argument -->
-<div class="chart" id="chart16">
+<!--Chart 17 - supporting or refuting an argument -->
+<div class="chart" id="chart17">
   <script>
-    var myChart16 = "charts/prod.json";
-    vegaEmbed('#chart16', myChart16);
+    var myChart17 = "charts/prod.json";
+    vegaEmbed('#chart17', myChart17);
   </script>
 </div>
 
@@ -210,11 +216,11 @@
 
 <p></p>
 
-<!--Chart 17 -  -->
-<div class="chart" id="chart17">
+<!--Chart 18 -  -->
+<div class="chart" id="chart18">
   <script>
-    var myChart17 = "charts/_.json";
-    vegaEmbed('#chart17', myChart17);
+    var myChart18 = "charts/_.json";
+    vegaEmbed('#chart18', myChart18);
   </script>
 </div>
 
@@ -227,21 +233,21 @@
 <h3> Week 9:</h3>
 <p> Interactive charts </p>
 
-<!--Chart 18 - interactivity 2 -->
-<div class="chart" id="chart18">
+<!--Chart 19 - interactivity 2 -->
+<div class="chart" id="chart19">
   <script>
-    var myChart18 = "charts/G7_unemp.json";
-    vegaEmbed('#chart18', myChart18);
+    var myChart19 = "charts/G7_unemp.json";
+    vegaEmbed('#chart19', myChart19);
   </script>
 </div>
 
 <p> For the next chart, I merged two datasets from gov.uk in this <a href="https://colab.research.google.com/drive/1fwPJregv3BzsWEVQO4RHOEQpuRNNBggj?usp=sharing"> Colab Notebook</a>.</p>
 
-<!--Chart 19 - interactivity 2 -->
-<div class="chart" id="chart19">
+<!--Chart 20 - interactivity 2 -->
+<div class="chart" id="chart20">
   <script>     
-    var myChart19 = "charts/boosters_hospitalizations.json";
-    vegaEmbed('#chart19', myChart19);
+    var myChart20 = "charts/boosters_hospitalizations.json";
+    vegaEmbed('#chart20', myChart20);
   </script>
 </div>
 
