@@ -27,7 +27,7 @@
       <div class="wrap">
         <p> Head back to my homework portfolio <a class="textLink" href="index">here</a>.</p>
         
-<h3>Does the sharing of opinions in online forums influence the stock market?</h3>
+<h3>Does the sentiment presented in online forums influence the stock market?</h3>
       
 <p> To analyze the most recent changes in online sentiment, I wanted to access my text data using scraping or API.  I chose to use the Python Reddit API Wrapper (PRAW) to gather text from the r/stocks subreddit, as Reddit makes it’s data particularly accessible. </p>
 
@@ -124,7 +124,11 @@
   </script>
 </div>
 
-<p></p>
+<p>I have chosen to perform a Granger causality test, with the null hypothesis that sentiment is not predictive of market indecies. In order to perform this test, both of my time series must be stationary.</p>
+<p>I used a Dickey Fuller test for stationarity, and for the S&P 500, applied a Dickey Fuller test for stationarity, and applied a log transformation and first differencing to obtain a series centred around 0, without time trend, and with variance independent of time. See the python code for this in <a href="https://colab.research.google.com/drive/1361n5kxDiiUatZiXa6N78e4GwuYZovzq?usp=sharing">Google Colab</a>.</p>
+
+
+<p>Main sources: Analytics Vidyha</p>
 
 </body>
 </html>
