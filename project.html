@@ -22,14 +22,48 @@
       
       </head>
 <body>
-      <h1> My Project Page </h1>
+      <h1>Data Science Project Page</h1>
 
       <div class="wrap">
         <p> Head back to my homework portfolio <a class="textLink" href="index">here</a>.</p>
         
-<h3>Does the sentiment presented in online forums influence the stock market?</h3>
+<h3>Does Social Media Influence the Stock Market?</h3>
       
-<p> To analyze the most recent changes in online sentiment, I wanted to access my text data using scraping or API.  I chose to use the Python Reddit API Wrapper (PRAW) to gather text from the r/stocks subreddit, as Reddit makes it’s data particularly accessible. </p>
+<p>To assess this question, I will perform a Sentiment Analysis on online posts, and compare how these vary over time to fluctuations in the S&P 500 index. I chose to collect my text data from Reddit because it makes it's data particularly accessible through the Python Reddit API Wrapper.</p>
+
+<div class="chart" id="chart21">
+  <script>     var myChart21 = "charts/stocks_Polarity.json";
+    vegaEmbed('#chart21', myChart21);
+  </script>
+</div>
+<p>~<a href="https://colab.research.google.com/drive/1A2LFGAsgmIev6hK05JuAApSLtGbLKhd5?usp=sharing">colab notebook</a>~</p>
+
+<p>The initial challenge I faced was that the timeframe of posts cannot be specified in a fetch using standard PRAW, and it will only pull around 900 posts per run. I therefore switched to Pushshift PRAW, however this API was limited to 100 posts per run. I circumvented this using a loop, the Jupyter notebook for which can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/november.ipynb">here</a>. Due to the large amount of data being processed, I chose to run this loop for 1 month intervals. After fetching the posts, the notebook uses TextBlob to assign a polarity value to each,  1 being entirely positive, and -1 being entirely negative.</p>
+
+<!-- Time series chart of sentiment polarity -->
+
+<p>As my aim was to test whether the sentiment displayed in the forum over time influences changes in the market over time. I chose to perform a Granger Causality test, with the null hypothesis that sentiment is not useful in predicting the S&P 500 Index. In order to perform this test, both of my time series needed to be stationary.</p>
+
+<!-- Time series chart of sentiment polarity - now stationary -->
+
+<p>Predictably, the series for S&P 500 Index Values was not stationary. After a log transformation and first-differencing, the series satisfied a Dickey-Fuller test for stationarity: see the <a href="https://colab.research.google.com/drive/1361n5kxDiiUatZiXa6N78e4GwuYZovzq?usp=sharing"> Colab notebook.</a></p>
+
+<div class="chart" id="chart31">
+  <script>     var myChart31 = "charts/stationary_sp.json";
+    vegaEmbed('#chart31', myChart31);
+  </script>
+</div>
+
+
+
+
+
+
+
+<p>References:</p>
+<p>PRAW Docs - Pushift PRAW Docs - Analytics Vidyha</p>
+
+<p>Appendix:</p>
 
 <table border="1" class="dataframe">
   <thead>
@@ -62,10 +96,6 @@
   </tbody>
 </table>
 
-<p>The colab notebook for this PRAW fetch can be found <a href="https://colab.research.google.com/drive/1NxCkHR_M6weHpMxN3s88cJV_gvVfHD_q?usp=sharing">here</a>.</p>
-
-<p> </p>
-
 <p> To compare the sentiment of these posts to the performance of the stock market overall, I chose to consider the closing prices of the S&P500, both because it is an index and because about half of Reddit's users are from US. As I'm particularly interested in how online sentiment creates changes in the stock market, I calculated the percentage changes in this<a href="https://colab.research.google.com/drive/1gjyODYkXdZDXh5aABt-9P6aRxgJhkHfq?usp=sharing"> colab notebook</a>.</p>
 
 <!--Chart 24 - first sentiment polarity -->
@@ -75,15 +105,7 @@
   </script>
 </div>
 
-<p>I used the TextBlob library to calculate a polarity score for each text post, with 1 being entirely positive and vice versa.</p>
-
 <!--Chart 21 - first sentiment polarity -->
-<div class="chart" id="chart21">
-  <script>     var myChart21 = "charts/stocks_Polarity.json";
-    vegaEmbed('#chart21', myChart21);
-  </script>
-</div>
-<p><a href="https://colab.research.google.com/drive/1A2LFGAsgmIev6hK05JuAApSLtGbLKhd5?usp=sharing">Colab notebook</a>.</p>
 
 <p>I then performed some data processing in Stata for the largest possible dataset for r/stocks (982 text posts), in order to find the daily average polarity score, the code for which can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/daily_polarity.do">here</a>.</p>
 <!--Chart 27 - first sentiment polarity -->
@@ -102,34 +124,12 @@
   </script>
 </div>
 
-<p>The remaining problem now is that my PRAW fetch can only collect around 900 posts, which are simply the most recent. In order to be able to specify the timeframe of the posts, I looked to the <a href="https://pushshift.io/">Pushshift API</a></p>
-<p>The limitation of this method is that Pushshift can only pull 100 posts at a time, so I used a loop to circumvent this. Due to the large amount of data being fetched and processed, I chose to use a Jupyter notebook. This notebook streamlines the fetching and polarity calculation of posts for any specified period. <a href="">Download the notebook</a>.</p>
 
-
-
-
-
-<p>(This chart has polarity scores for the last month (08/12/2021 - 08/01/2022), but the loop took around 2 hours to run. See the <a href="https://colab.research.google.com/drive/1eXVo8NEg0AIMauVrTx4TkMDASwHuXQ9B?usp=sharing">Colab notebook.</a>)</p>
-<!--Chart 29 - first sentiment polarity -->
-<div class="chart" id="chart29">
-  <script>     var myChart29 = "charts/loop_1.json";
-    vegaEmbed('#chart29', myChart29);
-  </script>
-</div>
 
 <p> </p>
 <div class="chart" id="chart30">
   <script>     var myChart30 = "charts/aug_jan.json";
     vegaEmbed('#chart30', myChart30);
-  </script>
-</div>
-
-<p>I have chosen to perform a Granger causality test, with the null hypothesis that sentiment is not predictive of market indicies. In order to perform this test, both of my time series must be stationary.</p>
-<p>I used a Dickey Fuller test for stationarity, and for the S&P 500, applied a Dickey Fuller test for stationarity, and applied a log transformation and first differencing to obtain a series centred around 0, without time trend, and with variance independent of time. See the python code for this in <a href="https://colab.research.google.com/drive/1361n5kxDiiUatZiXa6N78e4GwuYZovzq?usp=sharing">Google Colab</a>.</p>
-
-<div class="chart" id="chart31">
-  <script>     var myChart31 = "charts/stationary_sp.json";
-    vegaEmbed('#chart31', myChart31);
   </script>
 </div>
 
@@ -141,7 +141,13 @@
   </script>
 </div>
 
-<p>Main sources: Analytics Vidyha</p>
+<p>(This chart has polarity scores for the last month (08/12/2021 - 08/01/2022), but the loop took around 2 hours to run. See the <a href="https://colab.research.google.com/drive/1eXVo8NEg0AIMauVrTx4TkMDASwHuXQ9B?usp=sharing">Colab notebook.</a>)</p>
+<!--Chart 29 - first sentiment polarity -->
+<div class="chart" id="chart29">
+  <script>     var myChart29 = "charts/first_reg.json";
+    vegaEmbed('#chart29', myChart29);
+  </script>
+</div>
 
 </body>
 </html>
