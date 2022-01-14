@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/short%20term%20sp.csv",
+      "format": {"type": "csv"}
+    },
+    "title": {
+      "text": "First-Differenced S&P 500 for 2021",
+      "subtitle": "ADF Statistic: -17.542895, Stationary TIme Series",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 300,
+    "height": 300,
+    "mark": {
+      "type": "line",
+      "point": false,
+      "color": "DarkCyan",
+      "strokeWidth": 2,
+      "opacity": 1
+    },
+    "encoding": {
+      "x": {"field": "Date", "type": "temporal", "title": null},
+      "y": {"field": "first diff", "type": "quantitative", "title": null}
+    }
+  }
