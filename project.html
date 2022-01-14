@@ -124,9 +124,14 @@
   </script>
 </div>
 
-<p>I have chosen to perform a Granger causality test, with the null hypothesis that sentiment is not predictive of market indecies. In order to perform this test, both of my time series must be stationary.</p>
+<p>I have chosen to perform a Granger causality test, with the null hypothesis that sentiment is not predictive of market indicies. In order to perform this test, both of my time series must be stationary.</p>
 <p>I used a Dickey Fuller test for stationarity, and for the S&P 500, applied a Dickey Fuller test for stationarity, and applied a log transformation and first differencing to obtain a series centred around 0, without time trend, and with variance independent of time. See the python code for this in <a href="https://colab.research.google.com/drive/1361n5kxDiiUatZiXa6N78e4GwuYZovzq?usp=sharing">Google Colab</a>.</p>
 
+<div class="chart" id="chart31">
+  <script>     var myChart31 = "charts/stationary_sp.json";
+    vegaEmbed('#chart31', myChart31);
+  </script>
+</div>
 
 <p>Main sources: Analytics Vidyha</p>
 
