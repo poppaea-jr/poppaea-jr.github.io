@@ -41,7 +41,7 @@
   
   
   
-      "x": {"field": "Score|Happiness score", "type": "quantitative", "title": null, "scale": {"domain": [0, 8]}}
+      "x": {"field": "Score", "type": "quantitative", "title": null, "scale": {"domain": [0, 8]}}
    
   
       }
