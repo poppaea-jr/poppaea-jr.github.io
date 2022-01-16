@@ -1,12 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/aug_to_now_polarity.csv",
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/sentiment_time_series_daily_nicedates.csv",
       "format": {"type": "csv"}
     },
     "title": {
-      "text": "Online Sentiment in the r/stocks SubReddit",
-      "subtitle": "Period from 2021-12-18 to 2022-01-08. Using TextBlob. Source: PRAW",
+      "text": "Daily Average Sentiment in the r/Stocks SubReddit",
+      "subtitle": "For 2021. Using TextBlob. Source: Pushift PRAW",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
@@ -15,14 +15,14 @@
     "width": 300,
     "height": 300,
     "mark": {
-      "type": "area",
+      "type": "line",
       "point": false,
       "color": "DarkCyan",
       "strokeWidth": 2,
       "opacity": 1
     },
     "encoding": {
-      "x": {"field": "DateTime", "type": "temporal", "title": null},
+      "x": {"field": "numdate", "type": "temporal", "title": null},
       "y": {"field": "polarity", "type": "quantitative", "title": null}
     }
   }

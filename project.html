@@ -38,9 +38,16 @@
 </div>
 
 <p>The above chart shows my first data pull for this project, the code for which can be found<a href="https://colab.research.google.com/drive/1A2LFGAsgmIev6hK05JuAApSLtGbLKhd5?usp=sharing"> in the colab notebook</a> or <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/stocks_fetch_and_pol.ipynb">on github</a>.
-The challenge I faced here was that the timeframe of posts cannot be specified in a fetch using standard PRAW, and it will only pull around 900 posts per run. I therefore switched to Pushshift PRAW, however this API was limited to 100 posts per run. I circumvented this using a loop. An example of this notebook, including outputs for one day, can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Example_Notebook_PRAW_Loop.ipynb"> in my Github here</a>. After fetching the posts, the notebook uses TextBlob to assign a polarity value to each,  1 being entirely positive, and -1 being entirely negative. Due to the large amount of data being processed, I chose to run this loop for 1 month intervals, and then merge them <a href="https://colab.research.google.com/drive/1e7s4wn46n7bbQA3g5V2wuPUlwEoeInXr?usp=sharing">in Pandas,</a> see the code <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/merging_months.ipynb">in Github</a>.</p>
+The challenge I faced here was that the timeframe of posts cannot be specified in a fetch using standard PRAW, and it will only pull around 900 posts per run. I therefore switched to Pushshift PRAW, however this API was limited to 100 posts per run. I circumvented this using a loop. An example of this notebook, including outputs for one day, can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Example_Notebook_PRAW_Loop.ipynb"> in my Github here</a>. After fetching the posts, the notebook uses TextBlob to assign a polarity value to each,  1 being entirely positive, and -1 being entirely negative. Due to the large amount of data being processed, I chose to run this loop for 1 month intervals, and then merge them <a href="https://colab.research.google.com/drive/1e7s4wn46n7bbQA3g5V2wuPUlwEoeInXr?usp=sharing">in Pandas,</a> see the code <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/merging_months.ipynb">in Github</a>.
+Once I had collected data for the whole year, I collapsed it to daily values in Stata, see the <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/sentiment_data_collapse.do">Do file here</a>. I converted the dates to be Vega friendly in colab, and plotted the years time series below:</p>
 
 <!-- Time series chart of sentiment polarity and sp -->
+
+<div class="chart" id="chart22">
+  <script>     var myChart22 = "charts/sentiment_time_series.json";
+    vegaEmbed('#chart22', myChart22);
+  </script>
+</div>
 
 <p>As my aim was to test whether the sentiment displayed in the forum over time influences changes in the market over time. I chose to perform a Granger Causality test, with the null hypothesis that sentiment is not useful in predicting the S&P 500 Index. In order to perform this test, both of my time series needed to be stationary.</p>
 
