@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/poppaea-jr/RDeconomist.github.io/main/main_data.csv"
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "circle",
+          "filled": false,
+          "color": "DarkCyan",
+          "opacity": 0.5},
+    "title": {
+      "text": "Regressing Online Sentiment in r/Stocks on the S&P",
+      "subtitle": "Using data from SPGlobal and Pushift PRAW",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 300,
+    "height": 300,
+        
+        "encoding": {
+          "x": {
+            "field": "polarity",
+            "scale": {"domain": [0.04, 0.16]},
+            "title": "Daily Sentiment Score",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Close",
+            "scale": {"domain": [43, 60]},
+            "title": "Closing Value S&P 500",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "DarkSlateGrey"
+        },
+        "transform": [
+          {
+            "regression": "polarity",
+            "on": "Close"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "polarity",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Close",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "polarity",
+            "on": "Close",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "DarkSlateGrey",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {
+          "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+    ]
+  }
