@@ -51,9 +51,7 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
 
 <p>As my aim was to test whether the sentiment displayed in the forum over time influences changes in the market over time. I chose to perform a Granger Causality test, with the null hypothesis that sentiment is not useful in predicting the S&P 500 Index. In order to perform this test, both of my time series needed to be stationary.</p>
 
-<!-- Time series chart of sentiment polarity - now stationary -->
-
-<p>Predictably, the series for S&P 500 Index Values was not stationary. After first-differencing, the series satisfied a Dickey-Fuller test for stationarity: see the <a href="https://colab.research.google.com/drive/1361n5kxDiiUatZiXa6N78e4GwuYZovzq?usp=sharing"> Colab notebook</a>, or view the code <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/yfin_stationarity.ipynb">on Github</a>.</p>
+<p>Predictably, the series for S&P 500 Index Values was not stationary, and required first-differencing: see the <a href="https://colab.research.google.com/drive/1361n5kxDiiUatZiXa6N78e4GwuYZovzq?usp=sharing"> Colab notebook</a>, or view the code <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/yfin_stationarity.ipynb">on Github</a>.</p>
 
 <div class="chart" id="chart31">
   <script>     var myChart31 = "charts/stationary_sp.json";
@@ -61,7 +59,9 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
   </script>
 </div>
 
-<p>Post their transformations, both series have a p-value less than 0.000 in a Dickey Fuller test with the null hypothesis of non-stationarity, indicating that the chance of this series occuring if the underlying variable is stationary is less than 0.1%. I therefore interpreted this as them being stationary.</p>
+<p>My time series for sentiment already appeared stationary according to a Dickey Fuller test, <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/sentiment_stationarity.ipynb">see the code</a>.</p>
+
+<p>Post their transformations, both series have a p-value less than 0.000 in a Dickey Fuller test with the null hypothesis of non-stationarity, indicating that the chance of this series occuring if the underlying variable is stationary is less than 0.1%. I therefore interpreted this as them being stationary, and therefore progressed to the Granger test.</p>
 
 <p>Already, work is being done involving opinion dynamics in automated trading, but perhaps data such as I have collected from Reddit is most applicable cases such as cryptocurrencies and the Gamestop short squeeze. Looking at a market index such as the S&P 500, It would be interesting to look at a wider base of text data, such as what is happening in the news, and Twitter.</p>
 
