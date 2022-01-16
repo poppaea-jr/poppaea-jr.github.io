@@ -63,6 +63,8 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
 
 <p>Post their transformations, both series have a p-value less than 0.000 in a Dickey Fuller test with the null hypothesis of non-stationarity, indicating that the chance of this series occuring if the underlying variable is stationary is less than 0.1%. I therefore interpreted this as them being stationary, and therefore progressed to the Granger test.</p>
 
+<p>An extended version of my S&P fetch, which indludes this Granger test, can be found<a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Granger_test.ipynb"> on my Github</a>. The smallest final p-value in the final Granger causation matrix was 0.2723, too large to reject the null hypothesis and therefore conclusing that sentiment in r/stocks does not cause changes in the S&P 500 index.</p>
+
 <p>Already, work is being done involving opinion dynamics in automated trading, but perhaps data such as I have collected from Reddit is most applicable cases such as cryptocurrencies and the Gamestop short squeeze. Looking at a market index such as the S&P 500, It would be interesting to look at a wider base of text data, such as what is happening in the news, and Twitter.</p>
 
 
