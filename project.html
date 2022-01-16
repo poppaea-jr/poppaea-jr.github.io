@@ -27,7 +27,7 @@
       <div class="wrap">
         <p> Head back to my homework portfolio <a class="textLink" href="index">here</a>.</p>
         
-<h3>Does Social Media Influence the Stock Market?</h3>
+<h3>Do the Opinions of Reddit Users Influence the Stock Market?</h3>
       
 <p>To assess this question, I will perform a Sentiment Analysis on online posts, and compare how these vary over time to fluctuations in the S&P 500 index. I chose to collect my text data from Reddit because it makes it's data particularly accessible through the Python Reddit API Wrapper.</p>
 
@@ -76,89 +76,6 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
 
 <p>Data containing polarity scored for every post prior to daily averaging is available <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/sentiment_time_series.csv">on my github</a></p>
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>DateTime</th>
-      <th>text</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2022-01-07 16:13:23</td>
-      <td>Roblox (RBLX) Stock Plunges 7% on China App Removal, Seen as 'Incremental Unforeseen Headwind'Shares of Roblox (NYSE:...</td>
-    </tr>
-    <tr>
-      <td>2022-01-07 15:55:48</td>
-      <td>Hedge funds are selling tech shares at their fastest pace in a decadeSurging bond yields have triggered hedge funds...</td>
-    </tr>
-    <tr>
-      <td>2022-01-07 15:55:31</td>
-      <td>1 Stock, multiple exchanges?I intend to load up on some MSFT on DeGiro, I am a European citizen.\n\nBeing...</td>
-    </tr>
-    <tr>
-      <td>2022-01-07 15:48:26</td>
-      <td>1 year vs trailing 12 months on an income statementI wish I could add photos because it would help alot...</td>
-    </tr>
-    <tr>
-      <td>2022-01-07 15:26:15</td>
-      <td>$ACY, Aerocentury corp, an empty shell of grandiose promises.**I am short $ACY, and I think the company is...</td>
-    </tr>
-  </tbody>
-</table>
-
-<p> To compare the sentiment of these posts to the performance of the stock market overall, I chose to consider the closing prices of the S&P500, both because it is an index and because about half of Reddit's users are from US. As I'm particularly interested in how online sentiment creates changes in the stock market, I calculated the percentage changes in this<a href="https://colab.research.google.com/drive/1gjyODYkXdZDXh5aABt-9P6aRxgJhkHfq?usp=sharing"> colab notebook</a>.</p>
-
-<!--Chart 24 - first sentiment polarity -->
-<div class="chart" id="chart24">
-  <script>     var myChart24 = "charts/SP_Pct_Chn.json";
-    vegaEmbed('#chart24', myChart24);
-  </script>
-</div>
-
-<!--Chart 21 - first sentiment polarity -->
-
-<p>I then performed some data processing in Stata for the largest possible dataset for r/stocks (982 text posts), in order to find the daily average polarity score, the code for which can be found <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/daily_polarity.do">here</a>.</p>
-<!--Chart 27 - first sentiment polarity -->
-<div class="chart" id="chart27">
-  <script>     var myChart27 = "charts/daily_r_stocks.json";
-    vegaEmbed('#chart27', myChart27);
-  </script>
-</div>
-
-<p>In order to compare variations in sentiment with those in the market, I computed the percentage changes in sentiment between days against the same for the S&P500 index, in the following <a href="https://colab.research.google.com/drive/1olLnjS3A79EPddlX6vA_BRsR3GQCT6Iv?usp=sharing">Colab notebook.</a></p>
-
-<!--Chart 28 - first sentiment polarity -->
-<div class="chart" id="chart28">
-  <script>     var myChart28 = "charts/sen_pol.json";
-    vegaEmbed('#chart28', myChart28);
-  </script>
-</div>
-
-
-
-<p> </p>
-<div class="chart" id="chart30">
-  <script>     var myChart30 = "charts/aug_jan.json";
-    vegaEmbed('#chart30', myChart30);
-  </script>
-</div>
-
-<p>The S&P time series for the time period I considered only required first differencing to reach stationarity, see the <a href="https://colab.research.google.com/drive/1on3DUZ9Cl-rJkkyHkp80oRrUaIr_zgXS?usp=sharing">Colab notebook</a>.</p>
-
-<div class="chart" id="chart32">
-  <script>     var myChart32 = "charts/2021_stat_sp.json";
-    vegaEmbed('#chart32', myChart32);
-  </script>
-</div>
-
-<p>(This chart has polarity scores for the last month (08/12/2021 - 08/01/2022), but the loop took around 2 hours to run. See the <a href="https://colab.research.google.com/drive/1eXVo8NEg0AIMauVrTx4TkMDASwHuXQ9B?usp=sharing">Colab notebook.</a>)</p>
-<!--Chart 29 - first sentiment polarity -->
-<div class="chart" id="chart29">
-  <script>     var myChart29 = "charts/first_reg.json";
-    vegaEmbed('#chart29', myChart29);
-  </script>
-</div>
 
 <h3>References:</h3>
 <p>PRAW: <a href="https://praw.readthedocs.io/en/stable/">read the docs</a></p>
