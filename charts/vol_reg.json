@@ -1,37 +1,34 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/poppaea-jr/RDeconomist.github.io/main/main_data.csv"
+      "url": "https://raw.githubusercontent.com/poppaea-jr/poppaea-jr.github.io/main/vol_reg.csv"
     },
     "layer": [
       {
         "mark": {
           "type": "circle",
           "filled": false,
-          "color": "DarkCyan",
-          "opacity": 0.5},
-    "title": {
-      "text": "Regressing Online Sentiment in r/Stocks on the S&P",
-      "subtitle": "Using data from SPGlobal and Pushift PRAW",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
-    },
-    "width": 300,
-    "height": 300,
-        
+          "opacity": 0.5,
+          "color": "DarkCyan"
+        },
+        "title": {
+          "text": "Regressing Online Sentiment on Trade Volumes of the S&P",
+          "subtitle": "Using data from SPGlobal and Pushift PRAW",
+          "subtitleFontStyle": "italic",
+          "subtitleFontSize": 10,
+          "anchor": "start",
+          "color": "black"
+        },
+        "width": 300,
+        "height": 300,
         "encoding": {
           "x": {
             "field": "polarity",
             "scale": {"domain": [0.04, 0.16]},
-            "title": "Daily Sentiment Score",
             "type": "quantitative"
           },
           "y": {
-            "field": "Close",
-            "scale": {"domain": [43, 60]},
-            "title": "Closing Value S&P 500",
+            "field": "Volume",
             "type": "quantitative"
           }
         }
@@ -43,8 +40,8 @@
         },
         "transform": [
           {
-            "regression": "polarity",
-            "on": "Close"
+            "regression": "Volume",
+            "on": "polarity"
           }
         ],
         "encoding": {
@@ -53,7 +50,7 @@
             "type": "quantitative"
           },
           "y": {
-            "field": "Close",
+            "field": "Volume",
             "type": "quantitative"
           }
         }
@@ -62,10 +59,10 @@
         "transform": [
           {
             "regression": "polarity",
-            "on": "Close",
+            "on": "Volume",
             "params": true
-          },
-          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+          }
+  
         ],
         "mark": {
           "type": "text",
@@ -77,6 +74,7 @@
         "encoding": {
           "text": {"type": "nominal", "field": "R2"}
         }
+  
       }
     ]
   }
