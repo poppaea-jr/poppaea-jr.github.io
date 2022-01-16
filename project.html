@@ -27,7 +27,7 @@
       <div class="wrap">
         <p> Head back to my homework portfolio <a class="textLink" href="index">here</a>.</p>
         
-<h3>Do the Opinions of Reddit Users Influence the Stock Market?</h3>
+<h3>Do the Opinions of Reddit Users in r/Stocks Influence the Stock Market?</h3>
       
 <p>To assess this question, I will perform a Sentiment Analysis on online posts, and compare how these vary over time to fluctuations in the S&P 500 close and volumes. I chose to collect my text data from Reddit because it makes its data particularly accessible through the Python Reddit API Wrapper.</p>
 
@@ -49,7 +49,7 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
   </script>
 </div>
 
-<p>As my aim was to test whether the sentiment displayed in the forum over time influences changes in the market over time. I chose to perform a Granger Causality test, with the null hypothesis that sentiment is not useful in predicting the S&P 500 Index. In order to perform this test, both of my time series needed to be stationary.</p>
+<p>As my aim was to test whether the sentiment displayed in the forum over time influences changes in the market over time, I chose to test for Granger causality, that is whether the time-series of sentiment is useful in predicting the time-series of the market index. I tested with the null hypothesis that neither one was Granger causal of the other. In order to perform this test, both of my time series needed to be stationary.</p>
 
 <p>Predictably, the series for S&P 500 Index Values was not stationary, and required first-differencing: see the <a href="https://colab.research.google.com/drive/1361n5kxDiiUatZiXa6N78e4GwuYZovzq?usp=sharing"> Colab notebook</a>, or view the code <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/yfin_stationarity.ipynb">on Github</a>.</p>
 
@@ -61,9 +61,9 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
 
 <p>My time series for sentiment already appeared stationary according to a Dickey Fuller test, <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/sentiment_stationarity.ipynb">see the code</a>.</p>
 
-<p>Post their transformations, both series have a p-value less than 0.000 in a Dickey Fuller test with the null hypothesis of non-stationarity, indicating that the chance of this series occuring if the underlying variable is stationary is less than 0.1%. I therefore interpreted this as them being stationary, and therefore progressed to the Granger test.</p>
+<p>Now both series had a p-value less than 0.000 in their Dickey Fuller tests, indicating that the probability of this data occuring despite being non-stationary would be below 0.05%. I therefore interpreted this as them being stationary, and proceeded to the Granger test.</p>
 
-<p>An extended version of my S&P fetch, which indludes this Granger test, can be found<a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Granger_test.ipynb"> on my Github</a>. The smallest final p-value in the final Granger causation matrix was 0.2723, too large to reject the null hypothesis and therefore conclusing that sentiment in r/stocks does not cause changes in the S&P 500 index.</p>
+<p>An extended version of my S&P fetch, which indludes this Granger test, can be found<a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Granger_test.ipynb"> on my Github</a>. The smallest final p-value in the final Granger causation matrix was 0.2723, too large to reject the null hypothesis and therefore concluding that sentiment in r/stocks does not cause changes in the S&P 500 closing price.</p>
 
 <div class="chart" id="chart32">
   <script>     var myChart32 = "charts/close_reg.json";
@@ -71,9 +71,9 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
   </script>
 </div>
 
-<p>This is unsurprising considering that the regression of the raw values yeilds an R-squared statistic of 0.</p>
+<p>This result is unsurprising considering that the regression of the raw values yeilds an R-squared statistic of 0.</p>
 
-<p>Secondly, repeating the analysis for stock volume rather than stock closing price found a Granger coefficient of 0.0023, indicating that sentiment in the subreddit Granger causes changes in the volume of trades of the S&P 500, <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Granger_test_for_volume.ipynb">see the code in Github</a>.</p>
+<p>Secondly, repeating the analysis for stock volume rather than stock closing price found a Granger coefficient of 0.0023, a suficiently small p-value to reject the null hypothesis of no Granger causality at the 5% significance level, indicating that sentiment in the subreddit is Granger-causal of changes in the volume of trades of the S&P 500, <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Granger_test_for_volume.ipynb">see the code in Github</a>.</p>
 
 <div class="chart" id="chart33">
   <script>     var myChart33 = "charts/vol_reg.json";
@@ -81,7 +81,7 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
   </script>
 </div>
 
-<p>Already, work is being done involving opinion dynamics in automated trading, but perhaps data such as I have collected from Reddit is most applicable cases such as cryptocurrencies and the Gamestop short squeeze. Looking at a market index such as the S&P 500, It would be interesting to look at a wider base of text data, such as what is happening in the news, and Twitter.</p>
+<p>This example using the r/Stocks subreddit indicates more broadly that text data is incredibly valuble. Already, there are automated traders which incorperate opinion dynamics into their decision making. My first steps to continue this work will be to extend the breadth of my text data to current events and other media such as Twitter.</p>
 
 
 
@@ -90,7 +90,7 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
 
 <h3>Appendix:</h3>
 
-<p>Data containing polarity scored for every post prior to daily averaging is available <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/sentiment_time_series.csv">on my github</a></p>
+<p>Data containing polarity scores for every post prior to daily averaging is available <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/sentiment_time_series.csv">on my github</a></p>
 
 
 <h3>References:</h3>
