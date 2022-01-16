@@ -65,6 +65,8 @@ Once I had collected data for the whole year, I collapsed it to daily values in 
 
 <p>An extended version of my S&P fetch, which indludes this Granger test, can be found<a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Granger_test.ipynb"> on my Github</a>. The smallest final p-value in the final Granger causation matrix was 0.2723, too large to reject the null hypothesis and therefore conclusing that sentiment in r/stocks does not cause changes in the S&P 500 index.</p>
 
+<p>Secondly, repeating the analysis for stock volume rather than stock closing price found a Granger coefficient of 0.0023, indicating that sentiment in the subreddit Granger causes changes in the volume of trades of the S&P 500, <a href="https://github.com/poppaea-jr/poppaea-jr.github.io/blob/main/Granger_test_for_volume.ipynb">see the code in Github</a>.</p>
+
 <p>Already, work is being done involving opinion dynamics in automated trading, but perhaps data such as I have collected from Reddit is most applicable cases such as cryptocurrencies and the Gamestop short squeeze. Looking at a market index such as the S&P 500, It would be interesting to look at a wider base of text data, such as what is happening in the news, and Twitter.</p>
 
 
